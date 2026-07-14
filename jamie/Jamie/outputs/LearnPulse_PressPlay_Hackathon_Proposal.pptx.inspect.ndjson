@@ -1,0 +1,399 @@
+{"kind":"deck","id":"pr/4c59os","name":"Deck"}
+{"kind":"layout","layoutId":"4aed4d74-f506-4c36-892f-4661ac9ef071","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"e0ec4a3e-032f-46a7-bfab-2355313125b5","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/0hav0r","slide":1,"title":"PRESSPLAY ACADEMY × AWS HACKATHON","textShapes":14}
+{"kind":"shape","id":"sh/d07exk3q","slide":1,"name":"yellow-rail","bbox":[0,0,16,720]}
+{"kind":"shape","id":"sh/qxgv2pkz","slide":1,"name":"pill-PRESSPLAY ACADEMY × AWS HACKATHON","bbox":[56,48,310,30]}
+{"kind":"textbox","id":"sh/rypwvalk","slide":1,"name":"pilltxt-PRESSPLAY ACADEMY × AWS HACKATHON","text":"PRESSPLAY ACADEMY × AWS HACKATHON","textPreview":"PRESSPLAY ACADEMY × AWS HACKATHON","textChars":33,"textLines":1,"bbox":[56,48,310,30]}
+{"kind":"textbox","id":"sh/0nix8z21","slide":1,"name":"brand","text":"LearnPulse","textPreview":"LearnPulse","textChars":10,"textLines":1,"bbox":[56,116,680,74]}
+{"kind":"textbox","id":"sh/1ore143m","slide":1,"name":"cover-title","text":"把每一次卡住，\n變成繼續學下去的理由","textPreview":"把每一次卡住， | 變成繼續學下去的理由","textChars":18,"textLines":2,"bbox":[56,196,670,174]}
+{"kind":"textbox","id":"sh/el0f6pkb","slide":1,"name":"cover-sub","text":"情緒感知式學習續航系統｜偵測卡頓、即時介入、站外召回","textPreview":"情緒感知式學習續航系統｜偵測卡頓、即時介入、站外召回","textChars":26,"textLines":1,"bbox":[56,395,660,52]}
+{"kind":"shape","id":"sh/fm9wzulw","slide":1,"name":"pill-可操作 Prototype","bbox":[56,490,156,30]}
+{"kind":"textbox","id":"sh/gredwv2x","slide":1,"name":"pilltxt-可操作 Prototype","text":"可操作 Prototype","textPreview":"可操作 Prototype","textChars":13,"textLines":1,"bbox":[56,490,156,30]}
+{"kind":"shape","id":"sh/hsnep03i","slide":1,"name":"pill-資料閉環","bbox":[224,490,116,30]}
+{"kind":"textbox","id":"sh/dwz2do72","slide":1,"name":"pilltxt-資料閉環","text":"資料閉環","textPreview":"資料閉環","textChars":4,"textLines":1,"bbox":[224,490,116,30]}
+{"kind":"shape","id":"sh/svq1kj6h","slide":1,"name":"pill-Mock 誠信標示","bbox":[352,490,146,30]}
+{"kind":"textbox","id":"sh/ruh0bepw","slide":1,"name":"pilltxt-Mock 誠信標示","text":"Mock 誠信標示","textPreview":"Mock 誠信標示","textChars":9,"textLines":1,"bbox":[352,490,146,30]}
+{"kind":"shape","id":"sh/qt8ji9or","slide":1,"name":"cover-stage","bbox":[790,94,420,520]}
+{"kind":"textbox","id":"sh/10z2ho7e","slide":1,"name":"cover-ui-label","text":"LEARNING PULSE / LIVE","textPreview":"LEARNING PULSE / LIVE","textChars":21,"textLines":1,"bbox":[824,126,250,22]}
+{"kind":"shape","id":"sh/0zq1oj6t","slide":1,"bbox":[835,263,30,30]}
+{"kind":"shape","id":"sh/fyhkfyp8","slide":1,"bbox":[985,210,30,30]}
+{"kind":"shape","id":"sh/ex8jmton","slide":1,"bbox":[1133,307,30,30]}
+{"kind":"shape","id":"sh/poj2l87a","slide":1,"bbox":[985,415,30,30]}
+{"kind":"shape","id":"sh/ona1s36p","slide":1,"bbox":[898.5,191.5,53,120]}
+{"kind":"shape","id":"sh/8j2d4bid","slide":1,"bbox":[1025.5,214.5,97,118]}
+{"kind":"shape","id":"sh/94budgzi","slide":1,"bbox":[1035,317,93,133]}
+{"kind":"shape","id":"sh/mh0v2107","slide":1,"bbox":[849,294,137,135]}
+{"kind":"textbox","id":"sh/7itcb6hs","slide":1,"name":"cover-state1","text":"重播 ×2","textPreview":"重播 ×2","textChars":5,"textLines":1,"bbox":[808,310,100,22]}
+{"kind":"textbox","id":"sh/w72d8bi9","slide":1,"name":"cover-state2","text":"卡關訊號","textPreview":"卡關訊號","textChars":4,"textLines":1,"bbox":[956,178,100,22]}
+{"kind":"textbox","id":"sh/h8buhgzu","slide":1,"name":"cover-state3","text":"換個解法","textPreview":"換個解法","textChars":4,"textLines":1,"bbox":[1104,354,100,22]}
+{"kind":"textbox","id":"sh/u5kv6103","slide":1,"name":"cover-state4","text":"恢復學習","textPreview":"恢復學習","textChars":4,"textLines":1,"bbox":[950,465,104,22]}
+{"kind":"textbox","id":"sh/v6tcf6ho","slide":1,"name":"cover-loop","text":"一個可量測的學習恢復閉環","textPreview":"一個可量測的學習恢復閉環","textChars":12,"textLines":1,"bbox":[824,552,330,30]}
+{"kind":"textbox","id":"sh/cbitwri5","slide":1,"name":"footer","text":"LearnPulse｜Hackathon Proposal｜2026.07","textPreview":"LearnPulse｜Hackathon Proposal｜2026.07","textChars":37,"textLines":1,"bbox":[48,692,1160,18]}
+{"kind":"notes","id":"nt/0hav0r","slide":1,"text":""}
+{"kind":"slide","id":"sl/j1bbcy","slide":2,"title":"02","textShapes":19}
+{"kind":"textbox","id":"sh/1kz2d436","slide":2,"name":"num-2","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[48,42,52,28]}
+{"kind":"textbox","id":"sh/ehoj294v","slide":2,"name":"eyebrow-2","text":"USER PROBLEM","textPreview":"USER PROBLEM","textChars":12,"textLines":1,"bbox":[104,42,420,28]}
+{"kind":"textbox","id":"sh/fixkbulg","slide":2,"name":"title-2","text":"不是沒有內容，而是卡住時沒有人接手","textPreview":"不是沒有內容，而是卡住時沒有人接手","textChars":17,"textLines":1,"bbox":[48,78,1160,62]}
+{"kind":"textbox","id":"sh/sf610zmp","slide":2,"name":"sub-2","text":"同一個「跳看」可能代表困惑、挫折、內容過淺或已經掌握。錯誤介入，比不介入更容易流失。","textPreview":"同一個「跳看」可能代表困惑、挫折、內容過淺或已經掌握。錯誤介入，比不介入更容易流失。","textChars":42,"textLines":1,"bbox":[48,142,1120,40]}
+{"kind":"shape","id":"sh/dgf2943a","slide":2,"name":"journey-0","bbox":[72,246,220,170]}
+{"kind":"shape","id":"sh/qtojyp4j","slide":2,"name":"journey-1","bbox":[344,246,220,170]}
+{"kind":"shape","id":"sh/ruxk7ul4","slide":2,"name":"journey-2","bbox":[616,246,220,170]}
+{"kind":"shape","id":"sh/4rm1wfmt","slide":2,"name":"journey-3","bbox":[888,246,220,170]}
+{"kind":"shape","id":"sh/5sv25k3e","slide":2,"bbox":[292,331,52,0]}
+{"kind":"shape","id":"sh/5s3et8rm","slide":2,"bbox":[564,331,52,0]}
+{"kind":"shape","id":"sh/k7ax0nqh","slide":2,"bbox":[836,331,52,0]}
+{"kind":"textbox","id":"sh/j61wri9w","slide":2,"name":"j-num-0","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[90,262,40,28]}
+{"kind":"textbox","id":"sh/i5svyd8b","slide":2,"name":"j-title-0","text":"打開課程","textPreview":"打開課程","textChars":4,"textLines":1,"bbox":[90,300,184,34]}
+{"kind":"textbox","id":"sh/x4jep8rq","slide":2,"name":"j-desc-0","text":"有明確學習意圖","textPreview":"有明確學習意圖","textChars":7,"textLines":1,"bbox":[90,346,184,54]}
+{"kind":"textbox","id":"sh/w3adw3q5","slide":2,"name":"j-num-1","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[362,262,40,28]}
+{"kind":"textbox","id":"sh/v21wny9k","slide":2,"name":"j-title-1","text":"遇到摩擦","textPreview":"遇到摩擦","textChars":4,"textLines":1,"bbox":[362,300,184,34]}
+{"kind":"textbox","id":"sh/a1svut8z","slide":2,"name":"j-desc-1","text":"重播／跳看／重複提問","textPreview":"重播／跳看／重複提問","textChars":10,"textLines":1,"bbox":[362,346,184,54]}
+{"kind":"textbox","id":"sh/90zeloru","slide":2,"name":"j-num-2","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[634,262,40,28]}
+{"kind":"textbox","id":"sh/8zqds3q9","slide":2,"name":"j-title-2","text":"離開頁面","textPreview":"離開頁面","textChars":4,"textLines":1,"bbox":[634,300,184,34]}
+{"kind":"textbox","id":"sh/0ve5on21","slide":2,"name":"j-desc-2","text":"沒有被理解或給下一步","textPreview":"沒有被理解或給下一步","textChars":10,"textLines":1,"bbox":[634,346,184,54]}
+{"kind":"textbox","id":"sh/lwn6xs3m","slide":2,"name":"j-num-3","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[906,262,40,28]}
+{"kind":"textbox","id":"sh/ytwnmxkb","slide":2,"name":"j-title-3","text":"流失風險","textPreview":"流失風險","textChars":4,"textLines":1,"bbox":[906,300,184,34]}
+{"kind":"textbox","id":"sh/zu5ovilg","slide":2,"name":"j-desc-3","text":"完課、留存與續購一起下降","textPreview":"完課、留存與續購一起下降","textChars":12,"textLines":1,"bbox":[906,346,184,54]}
+{"kind":"shape","id":"sh/cru5kn25","slide":2,"name":"pain-callout","bbox":[360,468,560,106]}
+{"kind":"textbox","id":"sh/dsnmts3q","slide":2,"name":"pain-callout-big","text":"平台看得到行為，卻看不到原因","textPreview":"平台看得到行為，卻看不到原因","textChars":14,"textLines":1,"bbox":[388,490,506,34]}
+{"kind":"textbox","id":"sh/qpcnidkz","slide":2,"name":"pain-callout-small","text":"LearnPulse 的切入點：用多訊號推估「需要哪一種幫助」，而非診斷情緒。","textPreview":"LearnPulse 的切入點：用多訊號推估「需要哪一種幫助」，而非診斷情緒。","textChars":39,"textLines":1,"bbox":[388,530,506,38]}
+{"kind":"textbox","id":"sh/bql4rilk","slide":2,"name":"footer","text":"來源：專案產品需求與 Demo 情境；目前為 Mock Data / Rule-based Demo Inference","textPreview":"來源：專案產品需求與 Demo 情境；目前為 Mock Data / Rule-based Demo Inference","textChars":60,"textLines":1,"bbox":[48,692,1160,18]}
+{"kind":"notes","id":"nt/j1bbcy","slide":2,"text":""}
+{"kind":"slide","id":"sl/hyotl2","slide":3,"title":"03","textShapes":20}
+{"kind":"textbox","id":"sh/4vu9onyx","slide":3,"name":"num-3","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[48,42,52,28]}
+{"kind":"textbox","id":"sh/3ul8vixc","slide":3,"name":"eyebrow-3","text":"DATA INSIGHT","textPreview":"DATA INSIGHT","textChars":12,"textLines":1,"bbox":[104,42,420,28]}
+{"kind":"textbox","id":"sh/itcrmdg7","slide":3,"name":"title-3","text":"AI 已經創造學習深度，真正缺口是持續性","textPreview":"AI 已經創造學習深度，真正缺口是持續性","textChars":20,"textLines":1,"bbox":[48,78,1160,62]}
+{"kind":"textbox","id":"sh/hs3qt8fm","slide":3,"name":"sub-3","text":"官方簡報數字顯示：使用 AI 的價值成立，但黏著度會在新鮮感後快速下滑。","textPreview":"官方簡報數字顯示：使用 AI 的價值成立，但黏著度會在新鮮感後快速下滑。","textChars":36,"textLines":1,"bbox":[48,142,1120,40]}
+{"kind":"shape","id":"sh/g7u9kny1","slide":3,"name":"retention-chart","bbox":[48,220,540,360]}
+{"kind":"textbox","id":"sh/v6l8rihg","slide":3,"name":"chart-title","text":"AI 助教黏著度","textPreview":"AI 助教黏著度","textChars":8,"textLines":1,"bbox":[78,248,220,28]}
+{"kind":"textbox","id":"sh/u5cridgv","slide":3,"name":"chart-note","text":"DAU / MAU（官方說明會口述）","textPreview":"DAU / MAU（官方說明會口述）","textChars":18,"textLines":1,"bbox":[78,280,260,22]}
+{"kind":"shape","id":"sh/1o7a5cfq","slide":3,"name":"axis","bbox":[92,522,420,2]}
+{"kind":"shape","id":"sh/0ne9w7y5","slide":3,"name":"bar-0","bbox":[126,332,110,190]}
+{"kind":"textbox","id":"sh/ytkn65kn","slide":3,"name":"barv-0","text":"29%","textPreview":"29%","textChars":3,"textLines":1,"bbox":[126,290,110,36]}
+{"kind":"textbox","id":"sh/zut4fal8","slide":3,"name":"barl-0","text":"上線初期","textPreview":"上線初期","textChars":4,"textLines":1,"bbox":[126,538,110,26]}
+{"kind":"shape","id":"sh/kv258f2t","slide":3,"name":"bar-1","bbox":[326,460,110,62]}
+{"kind":"textbox","id":"sh/lgbmhk3y","slide":3,"name":"barv-1","text":"<10%","textPreview":"<10%","textChars":4,"textLines":1,"bbox":[326,418,110,36]}
+{"kind":"textbox","id":"sh/ap0325kb","slide":3,"name":"barl-1","text":"後續","textPreview":"後續","textChars":2,"textLines":1,"bbox":[326,538,110,26]}
+{"kind":"textbox","id":"sh/bq94balw","slide":3,"name":"chart-insight","text":"價值不是一次性問答；\n要在學習旅程中持續接力。","textPreview":"價值不是一次性問答； | 要在學習旅程中持續接力。","textChars":23,"textLines":2,"bbox":[78,586,420,56]}
+{"kind":"textbox","id":"sh/cri54f2h","slide":3,"name":"proof-label","text":"AI 使用者的學習行為","textPreview":"AI 使用者的學習行為","textChars":11,"textLines":1,"bbox":[652,222,340,28]}
+{"kind":"shape","id":"sh/xsrmd032","slide":3,"name":"proof-0","bbox":[652,280,160,230]}
+{"kind":"textbox","id":"sh/ul4nepkv","slide":3,"name":"proofv-0","text":"7×","textPreview":"7×","textChars":2,"textLines":1,"bbox":[668,316,128,58]}
+{"kind":"textbox","id":"sh/vmd4nulg","slide":3,"name":"prooft-0","text":"平均影片開啟次數","textPreview":"平均影片開啟次數","textChars":8,"textLines":1,"bbox":[668,392,128,52]}
+{"kind":"shape","id":"sh/7ulsj2xg","slide":3,"name":"proofline-0","bbox":[694,466,76,5]}
+{"kind":"shape","id":"sh/6tcbqxwv","slide":3,"name":"proof-1","bbox":[836,280,160,230]}
+{"kind":"textbox","id":"sh/tg3alsfm","slide":3,"name":"proofv-1","text":"+84%","textPreview":"+84%","textChars":4,"textLines":1,"bbox":[852,316,128,58]}
+{"kind":"textbox","id":"sh/sfuts7e1","slide":3,"name":"prooft-1","text":"來回 Session","textPreview":"來回 Session","textChars":10,"textLines":1,"bbox":[852,392,128,52]}
+{"kind":"shape","id":"sh/fi5sn2xc","slide":3,"name":"proofline-1","bbox":[878,466,76,5]}
+{"kind":"shape","id":"sh/uhwbuxw7","slide":3,"name":"proof-2","bbox":[1020,280,160,230]}
+{"kind":"textbox","id":"sh/hknapcfi","slide":3,"name":"proofv-2","text":"+52%","textPreview":"+52%","textChars":4,"textLines":1,"bbox":[1036,316,128,58]}
+{"kind":"textbox","id":"sh/gjetw7ex","slide":3,"name":"prooft-2","text":"更願意回到站上","textPreview":"更願意回到站上","textChars":7,"textLines":1,"bbox":[1036,392,128,52]}
+{"kind":"shape","id":"sh/3m5srmxo","slide":3,"name":"proofline-2","bbox":[1062,466,76,5]}
+{"kind":"shape","id":"sh/2lwbyhw3","slide":3,"name":"opportunity","bbox":[652,544,528,72]}
+{"kind":"textbox","id":"sh/0ry9oruh","slide":3,"name":"opportunity-text","text":"機會：把 AI 從「工具」升級成「續航系統」","textPreview":"機會：把 AI 從「工具」升級成「續航系統」","textChars":22,"textLines":1,"bbox":[680,565,472,32]}
+{"kind":"textbox","id":"sh/lc7ahwbm","slide":3,"name":"footer","text":"來源：PressPlay 命題說明會（專案檔 說明會.txt）；數字為官方口述基準，非 LearnPulse 成效","textPreview":"來源：PressPlay 命題說明會（專案檔 說明會.txt）；數字為官方口述基準，非 LearnPulse 成效","textChars":57,"textLines":1,"bbox":[48,692,1160,18]}
+{"kind":"notes","id":"nt/hyotl2","slide":3,"text":""}
+{"kind":"slide","id":"sl/u2fp3q","slide":4,"title":"04","textShapes":18}
+{"kind":"textbox","id":"sh/p8fa983u","slide":4,"name":"num-4","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[48,42,52,28]}
+{"kind":"textbox","id":"sh/25obydkj","slide":4,"name":"eyebrow-4","text":"SOLUTION","textPreview":"SOLUTION","textChars":8,"textLines":1,"bbox":[104,42,420,28]}
+{"kind":"textbox","id":"sh/36xs7yl4","slide":4,"name":"title-4","text":"LearnPulse 建立一個可學習、可回饋的續航閉環","textPreview":"LearnPulse 建立一個可學習、可回饋的續航閉環","textChars":27,"textLines":1,"bbox":[48,78,1160,62]}
+{"kind":"textbox","id":"sh/cvqt4n2l","slide":4,"name":"sub-4","text":"從行為事件到個人化介入，每一步都留下可驗證的結果。","textPreview":"從行為事件到個人化介入，每一步都留下可驗證的結果。","textChars":25,"textLines":1,"bbox":[48,142,1120,40]}
+{"kind":"shape","id":"sh/dwzads36","slide":4,"name":"core","bbox":[490,264,300,168]}
+{"kind":"textbox","id":"sh/q9ob2dkf","slide":4,"name":"core-brand","text":"LearnPulse","textPreview":"LearnPulse","textChars":10,"textLines":1,"bbox":[526,294,228,38]}
+{"kind":"textbox","id":"sh/rahsbil0","slide":4,"name":"core-copy","text":"在對的時機\n給對的下一步","textPreview":"在對的時機 | 給對的下一步","textChars":12,"textLines":2,"bbox":[526,340,228,60]}
+{"kind":"shape","id":"sh/szm9sj2h","slide":4,"name":"loop-0","bbox":[74,224,260,112]}
+{"kind":"shape","id":"sh/t0va1o32","slide":4,"name":"loop-1","bbox":[946,224,260,112]}
+{"kind":"shape","id":"sh/twjq54fy","slide":4,"name":"loop-2","bbox":[946,448,260,112]}
+{"kind":"shape","id":"sh/8va9wzet","slide":4,"name":"loop-3","bbox":[74,448,260,112]}
+{"kind":"shape","id":"sh/7u183ux8","slide":4,"bbox":[334,280,156,68]}
+{"kind":"shape","id":"sh/6tsrupwn","slide":4,"bbox":[790,280,156,68]}
+{"kind":"shape","id":"sh/hk3q94va","slide":4,"bbox":[1076,336,0,112]}
+{"kind":"shape","id":"sh/gju90zep","slide":4,"bbox":[334,504,612,0]}
+{"kind":"shape","id":"sh/vil87ux4","slide":4,"bbox":[204,336,0,112]}
+{"kind":"textbox","id":"sh/uxcry9wj","slide":4,"name":"loop-title-0","text":"1  感知","textPreview":"1  感知","textChars":5,"textLines":1,"bbox":[96,244,216,30]}
+{"kind":"textbox","id":"sh/5onqdov6","slide":4,"name":"loop-desc-0","text":"觀看行為＋AI 對話","textPreview":"觀看行為＋AI 對話","textChars":10,"textLines":1,"bbox":[96,286,216,26]}
+{"kind":"textbox","id":"sh/4nu94jel","slide":4,"name":"loop-title-1","text":"2  推估","textPreview":"2  推估","textChars":5,"textLines":1,"bbox":[968,244,216,30]}
+{"kind":"textbox","id":"sh/o3m1wrq9","slide":4,"name":"loop-desc-1","text":"多訊號 learner state","textPreview":"多訊號 learner state","textChars":17,"textLines":1,"bbox":[968,286,216,26]}
+{"kind":"textbox","id":"sh/94v2pw7u","slide":4,"name":"loop-title-2","text":"3  介入","textPreview":"3  介入","textChars":5,"textLines":1,"bbox":[968,468,216,30]}
+{"kind":"textbox","id":"sh/m14juh83","slide":4,"name":"loop-desc-2","text":"站內解卡／調整難度","textPreview":"站內解卡／調整難度","textChars":9,"textLines":1,"bbox":[968,510,216,26]}
+{"kind":"textbox","id":"sh/n2dknmpo","slide":4,"name":"loop-title-3","text":"4  續航","textPreview":"4  續航","textChars":5,"textLines":1,"bbox":[96,468,216,30]}
+{"kind":"textbox","id":"sh/w761krq5","slide":4,"name":"loop-desc-3","text":"站外召回＋下一步推薦","textPreview":"站外召回＋下一步推薦","textChars":10,"textLines":1,"bbox":[96,510,216,26]}
+{"kind":"shape","id":"sh/x8f2tw7q","slide":4,"name":"pill-站內：秒級","bbox":[432,484,136,30]}
+{"kind":"textbox","id":"sh/a54jyh8f","slide":4,"name":"pilltxt-站內：秒級","text":"站內：秒級","textPreview":"站內：秒級","textChars":5,"textLines":1,"bbox":[432,484,136,30]}
+{"kind":"shape","id":"sh/b6xkrmpk","slide":4,"name":"pill-站外：事件驅動","bbox":[582,484,166,30]}
+{"kind":"textbox","id":"sh/cb21o7q1","slide":4,"name":"pilltxt-站外：事件驅動","text":"站外：事件驅動","textPreview":"站外：事件驅動","textChars":7,"textLines":1,"bbox":[582,484,166,30]}
+{"kind":"textbox","id":"sh/dcb2hc7m","slide":4,"name":"loop-bottom","text":"介入結果 → 恢復觀看／完課／回站 → 回寫資料 → 持續優化","textPreview":"介入結果 → 恢復觀看／完課／回站 → 回寫資料 → 持續優化","textChars":31,"textLines":1,"bbox":[328,610,624,34]}
+{"kind":"textbox","id":"sh/vq14na94","slide":4,"name":"footer","text":"核心差異：不是新增聊天機器人，而是把 AI 嵌入完整學習旅程","textPreview":"核心差異：不是新增聊天機器人，而是把 AI 嵌入完整學習旅程","textChars":30,"textLines":1,"bbox":[48,692,1160,18]}
+{"kind":"notes","id":"nt/u2fp3q","slide":4,"text":""}
+{"kind":"slide","id":"sl/l89odh","slide":5,"title":"05","textShapes":25}
+{"kind":"textbox","id":"sh/2d83i90f","slide":5,"name":"num-5","text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[48,42,52,28]}
+{"kind":"textbox","id":"sh/p0jmtoz6","slide":5,"name":"eyebrow-5","text":"DETECTION","textPreview":"DETECTION","textChars":9,"textLines":1,"bbox":[104,42,420,28]}
+{"kind":"textbox","id":"sh/ozalkjil","slide":5,"name":"title-5","text":"不用攝影機，也能從學習軌跡辨識「需要幫助」","textPreview":"不用攝影機，也能從學習軌跡辨識「需要幫助」","textChars":21,"textLines":1,"bbox":[48,78,1160,62]}
+{"kind":"textbox","id":"sh/fahknuho","slide":5,"name":"sub-5","text":"以至少兩種訊號交叉驗證；介面只給中性建議，不宣稱心理診斷。","textPreview":"以至少兩種訊號交叉驗證；介面只給中性建議，不宣稱心理診斷。","textChars":29,"textLines":1,"bbox":[48,142,1120,40]}
+{"kind":"textbox","id":"sh/e983e90j","slide":5,"name":"siglabel","text":"OBSERVE","textPreview":"OBSERVE","textChars":7,"textLines":1,"bbox":[56,216,160,24]}
+{"kind":"shape","id":"sh/1cz2p4zu","slide":5,"name":"sig-0","bbox":[56,254,132,48]}
+{"kind":"textbox","id":"sh/gbqlgzi9","slide":5,"name":"sigt-0","text":"重播 ×2","textPreview":"重播 ×2","textChars":5,"textLines":1,"bbox":[56,254,132,48]}
+{"kind":"shape","id":"sh/r6hkjuhs","slide":5,"name":"sig-1","bbox":[206,254,132,48]}
+{"kind":"textbox","id":"sh/65o3ap07","slide":5,"name":"sigt-1","text":"後退 ×2","textPreview":"後退 ×2","textChars":5,"textLines":1,"bbox":[206,254,132,48]}
+{"kind":"shape","id":"sh/wfepsruh","slide":5,"name":"sig-2","bbox":[356,254,132,48]}
+{"kind":"textbox","id":"sh/hgnq1wvm","slide":5,"name":"sigt-2","text":"相似提問","textPreview":"相似提問","textChars":4,"textLines":1,"bbox":[356,254,132,48]}
+{"kind":"shape","id":"sh/udw7qhcb","slide":5,"name":"sig-3","bbox":[56,324,132,48]}
+{"kind":"textbox","id":"sh/ve58zmdw","slide":5,"name":"sigt-3","text":"短停留","textPreview":"短停留","textChars":3,"textLines":1,"bbox":[56,324,132,48]}
+{"kind":"shape","id":"sh/8buporu5","slide":5,"name":"sig-4","bbox":[206,324,132,48]}
+{"kind":"textbox","id":"sh/9c3qxwvq","slide":5,"name":"sigt-4","text":"前跳 ×3","textPreview":"前跳 ×3","textChars":5,"textLines":1,"bbox":[206,324,132,48]}
+{"kind":"shape","id":"sh/mpc7mhcz","slide":5,"name":"sig-5","bbox":[356,324,132,48]}
+{"kind":"textbox","id":"sh/7al8vmdk","slide":5,"name":"sigt-5","text":"測驗未解","textPreview":"測驗未解","textChars":4,"textLines":1,"bbox":[356,324,132,48]}
+{"kind":"shape","id":"sh/s7y90bu9","slide":5,"name":"signal-anchor","bbox":[514,302,10,10]}
+{"kind":"shape","id":"sh/t87q9gbu","slide":5,"name":"state-anchor","bbox":[626,302,10,10]}
+{"kind":"shape","id":"sh/143qtg3y","slide":5,"bbox":[524,307,102,0]}
+{"kind":"textbox","id":"sh/03upkbmt","slide":5,"name":"inferlabel","text":"INFER","textPreview":"INFER","textChars":5,"textLines":1,"bbox":[620,216,150,24]}
+{"kind":"shape","id":"sh/f2l8r6l8","slide":5,"name":"state-box","bbox":[620,250,252,190]}
+{"kind":"shape","id":"sh/e1c7i14n","slide":5,"bbox":[642,276,12,12]}
+{"kind":"textbox","id":"sh/d03qpw32","slide":5,"name":"state-0","text":"confusion","textPreview":"confusion","textChars":9,"textLines":1,"bbox":[666,270,174,26]}
+{"kind":"shape","id":"sh/szupgrmh","slide":5,"bbox":[642,313,12,12]}
+{"kind":"textbox","id":"sh/ry18n65w","slide":5,"name":"state-1","text":"frustration","textPreview":"frustration","textChars":11,"textLines":1,"bbox":[666,307,174,26]}
+{"kind":"shape","id":"sh/qxs7e14b","slide":5,"bbox":[642,350,12,12]}
+{"kind":"textbox","id":"sh/5wj6lwn6","slide":5,"name":"state-2","text":"low engagement","textPreview":"low engagement","textChars":14,"textLines":1,"bbox":[666,344,174,26]}
+{"kind":"shape","id":"sh/4vapcrml","slide":5,"bbox":[642,387,12,12]}
+{"kind":"textbox","id":"sh/u18nmxk3","slide":5,"name":"state-3","text":"flow / neutral","textPreview":"flow / neutral","textChars":14,"textLines":1,"bbox":[666,381,174,26]}
+{"kind":"shape","id":"sh/v2h4v21o","slide":5,"name":"state-anchor2","bbox":[884,302,10,10]}
+{"kind":"shape","id":"sh/g3q5o729","slide":5,"name":"action-anchor","bbox":[996,302,10,10]}
+{"kind":"shape","id":"sh/h4zmxsju","slide":5,"bbox":[894,307,102,0]}
+{"kind":"textbox","id":"sh/6donidk7","slide":5,"name":"actlabel","text":"RESPOND","textPreview":"RESPOND","textChars":7,"textLines":1,"bbox":[988,216,160,24]}
+{"kind":"shape","id":"sh/7ex4rils","slide":5,"name":"act-0","bbox":[988,250,216,42]}
+{"kind":"textbox","id":"sh/8f65kn2d","slide":5,"name":"actt-0","text":"換個案例","textPreview":"換個案例","textChars":4,"textLines":1,"bbox":[1004,250,184,42]}
+{"kind":"shape","id":"sh/t0zmts3y","slide":5,"name":"act-1","bbox":[988,305,216,42]}
+{"kind":"textbox","id":"sh/y9o3edkb","slide":5,"name":"actt-1","text":"拆成步驟","textPreview":"拆成步驟","textChars":4,"textLines":1,"bbox":[1004,305,184,42]}
+{"kind":"shape","id":"sh/zax4nilg","slide":5,"name":"act-2","bbox":[988,360,216,42]}
+{"kind":"textbox","id":"sh/b2h0je5c","slide":5,"name":"actt-2","text":"進階挑戰","textPreview":"進階挑戰","textChars":4,"textLines":1,"bbox":[1004,360,184,42]}
+{"kind":"shape","id":"sh/q18jq9or","slide":5,"name":"act-3","bbox":[988,415,216,42]}
+{"kind":"textbox","id":"sh/doziloni","slide":5,"name":"actt-3","text":"不打擾","textPreview":"不打擾","textChars":3,"textLines":1,"bbox":[1004,415,184,42]}
+{"kind":"shape","id":"sh/c3q1sj6x","slide":5,"name":"rule","bbox":[56,492,1148,112]}
+{"kind":"textbox","id":"sh/3yx0fe5g","slide":5,"name":"rule-title","text":"可解釋的 Demo Baseline","textPreview":"可解釋的 Demo Baseline","textChars":18,"textLines":1,"bbox":[80,514,280,30]}
+{"kind":"textbox","id":"sh/2xojm9ov","slide":5,"name":"rule-copy","text":"重播 ≥ 2  ＋  提問 ≥ 1 或後退 ≥ 2  →  confusion  →  simplified example","textPreview":"重播 ≥ 2  ＋  提問 ≥ 1 或後退 ≥ 2  →  confusion  →  simplified example","textChars":62,"textLines":1,"bbox":[80,554,1020,28]}
+{"kind":"textbox","id":"sh/p0fih4n6","slide":5,"name":"rule-note","text":"正式上線：以匿名事件建立標籤、離線驗證、A/B 測試，再逐步替換成機器學習模型。","textPreview":"正式上線：以匿名事件建立標籤、離線驗證、A/B 測試，再逐步替換成機器學習模型。","textChars":40,"textLines":1,"bbox":[80,588,1020,22]}
+{"kind":"textbox","id":"sh/oz61oz6l","slide":5,"name":"footer","text":"研究依據：D’Mello et al. (2008)；專案實作：Rule-based Demo Inference，confidence 僅為示意","textPreview":"研究依據：D’Mello et al. (2008)；專案實作：Rule-based Demo Inference，confidence 僅為示意","textChars":73,"textLines":1,"bbox":[48,692,1160,18]}
+{"kind":"notes","id":"nt/l89odh","slide":5,"text":""}
+{"kind":"slide","id":"sl/og1xq2","slide":6,"title":"06","textShapes":18}
+{"kind":"textbox","id":"sh/md4jitsb","slide":6,"name":"num-6","text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[48,42,52,28]}
+{"kind":"textbox","id":"sh/9gv2d8r2","slide":6,"name":"eyebrow-6","text":"IN-SITE INTERVENTION","textPreview":"IN-SITE INTERVENTION","textChars":20,"textLines":1,"bbox":[104,42,420,28]}
+{"kind":"textbox","id":"sh/8fm1k3ah","slide":6,"name":"title-6","text":"介入不是彈窗打斷，而是最短路徑回到學習","textPreview":"介入不是彈窗打斷，而是最短路徑回到學習","textChars":19,"textLines":1,"bbox":[48,78,1160,62]}
+{"kind":"textbox","id":"sh/v2dkfi9s","slide":6,"name":"sub-6","text":"使用者可接受、略過或延後；每次選擇都回寫為下一次介入的訊號。","textPreview":"使用者可接受、略過或延後；每次選擇都回寫為下一次介入的訊號。","textChars":30,"textLines":1,"bbox":[48,142,1120,40]}
+{"kind":"shape","id":"sh/u14jmdsn","slide":6,"name":"browser","bbox":[48,208,1184,390]}
+{"kind":"shape","id":"sh/h4f2h8ry","slide":6,"name":"browser-top","bbox":[48,208,1184,40]}
+{"kind":"shape","id":"sh/w3m1onad","slide":6,"bbox":[65,223,10,10]}
+{"kind":"shape","id":"sh/36xkji94","slide":6,"bbox":[83,223,10,10]}
+{"kind":"shape","id":"sh/i5ojqdsj","slide":6,"bbox":[101,223,10,10]}
+{"kind":"textbox","id":"sh/kvelkbm1","slide":6,"name":"url","text":"pressplay.cc / learn / chapter-02","textPreview":"pressplay.cc / learn / chapter-02","textChars":33,"textLines":1,"bbox":[142,216,360,22]}
+{"kind":"shape","id":"sh/lwnmtg3m","slide":6,"name":"video","bbox":[72,270,666,294]}
+{"kind":"textbox","id":"sh/ytw3i14b","slide":6,"name":"video-tag","text":"Mock Video Player","textPreview":"Mock Video Player","textChars":17,"textLines":1,"bbox":[96,290,150,24]}
+{"kind":"textbox","id":"sh/zu5kr6lw","slide":6,"name":"video-copy","text":"用 JOIN 串起\n兩張資料表","textPreview":"用 JOIN 串起 | 兩張資料表","textChars":15,"textLines":2,"bbox":[100,350,430,98]}
+{"kind":"shape","id":"sh/8zelobmd","slide":6,"name":"progress-bg","bbox":[100,496,570,6]}
+{"kind":"shape","id":"sh/907mxg3y","slide":6,"name":"progress","bbox":[100,496,292,6]}
+{"kind":"shape","id":"sh/mxw3ml47","slide":6,"bbox":[384,491,16,16]}
+{"kind":"shape","id":"sh/7y54vqls","slide":6,"name":"pill-▶","bbox":[100,520,42,30]}
+{"kind":"textbox","id":"sh/wnylsvm9","slide":6,"name":"pilltxt-▶","text":"▶","textPreview":"▶","textChars":1,"textLines":1,"bbox":[100,520,42,30]}
+{"kind":"textbox","id":"sh/ho7m103u","slide":6,"name":"time","text":"04:12 / 12:00","textPreview":"04:12 / 12:00","textChars":13,"textLines":1,"bbox":[158,527,140,22]}
+{"kind":"textbox","id":"sh/5k32l0vy","slide":6,"name":"intervene-label","text":"RULE-BASED DEMO INFERENCE","textPreview":"RULE-BASED DEMO INFERENCE","textChars":25,"textLines":1,"bbox":[776,278,300,20]}
+{"kind":"textbox","id":"sh/4julcvud","slide":6,"name":"intervene-head","text":"這一段似乎重看了幾次，\n需要我換個方式說明嗎？","textPreview":"這一段似乎重看了幾次， | 需要我換個方式說明嗎？","textChars":23,"textLines":2,"bbox":[776,312,398,68]}
+{"kind":"textbox","id":"sh/3ilkjqd8","slide":6,"name":"intervene-evidence","text":"依據：重播片段 + 相似提問","textPreview":"依據：重播片段 + 相似提問","textChars":14,"textLines":1,"bbox":[776,390,310,22]}
+{"kind":"shape","id":"sh/ihc3alwn","slide":6,"name":"opt-0","bbox":[776,438,188,48]}
+{"kind":"textbox","id":"sh/d8nm90va","slide":6,"name":"optt-0","text":"用生活案例說明","textPreview":"用生活案例說明","textChars":7,"textLines":1,"bbox":[776,438,188,48]}
+{"kind":"shape","id":"sh/s7elgvup","slide":6,"name":"opt-1","bbox":[978,438,188,48]}
+{"kind":"textbox","id":"sh/rm54nqd4","slide":6,"name":"optt-1","text":"拆成三個步驟","textPreview":"拆成三個步驟","textChars":6,"textLines":1,"bbox":[978,438,188,48]}
+{"kind":"shape","id":"sh/qlc3elcj","slide":6,"name":"opt-2","bbox":[776,500,188,48]}
+{"kind":"textbox","id":"sh/tcj2dgvq","slide":6,"name":"optt-2","text":"查看前置概念","textPreview":"查看前置概念","textChars":6,"textLines":1,"bbox":[776,500,188,48]}
+{"kind":"shape","id":"sh/8ral4be5","slide":6,"name":"opt-3","bbox":[978,500,188,48]}
+{"kind":"textbox","id":"sh/yx8zehc3","slide":6,"name":"optt-3","text":"暫時不用","textPreview":"暫時不用","textChars":4,"textLines":1,"bbox":[978,500,188,48]}
+{"kind":"shape","id":"sh/jih072to","slide":6,"name":"result","bbox":[226,622,828,52]}
+{"kind":"textbox","id":"sh/kjq1g7u9","slide":6,"name":"result-copy","text":"接受介入 → Demo AI Output → 繼續播放 → Recovery event","textPreview":"接受介入 → Demo AI Output → 繼續播放 → Recovery event","textChars":45,"textLines":1,"bbox":[250,622,780,52]}
+{"kind":"textbox","id":"sh/lkzi9cbu","slide":6,"name":"footer","text":"已完成：困惑與低投入兩條分流、AI 助教、事件紀錄、Reset Demo","textPreview":"已完成：困惑與低投入兩條分流、AI 助教、事件紀錄、Reset Demo","textChars":36,"textLines":1,"bbox":[48,692,1160,18]}
+{"kind":"notes","id":"nt/og1xq2","slide":6,"text":""}
+{"kind":"slide","id":"sl/ar2lmz","slide":7,"title":"07","textShapes":23}
+{"kind":"textbox","id":"sh/8rypgvyd","slide":7,"name":"num-7","text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[48,42,52,28]}
+{"kind":"textbox","id":"sh/7qponqhs","slide":7,"name":"eyebrow-7","text":"OFF-SITE RECALL","textPreview":"OFF-SITE RECALL","textChars":15,"textLines":1,"bbox":[104,42,420,28]}
+{"kind":"textbox","id":"sh/mpw7el07","slide":7,"name":"title-7","text":"離站後，不催促完課；只送一個可完成的下一步","textPreview":"離站後，不催促完課；只送一個可完成的下一步","textChars":21,"textLines":1,"bbox":[48,78,1160,62]}
+{"kind":"textbox","id":"sh/hg76t0zu","slide":7,"name":"sub-7","text":"召回內容延續使用者最後卡點，降低重新進入課程的心理成本。","textPreview":"召回內容延續使用者最後卡點，降低重新進入課程的心理成本。","textChars":28,"textLines":1,"bbox":[48,142,1120,40]}
+{"kind":"shape","id":"sh/wfypkvy9","slide":7,"name":"recall-0","bbox":[54,258,140,212]}
+{"kind":"shape","id":"sh/vuporqho","slide":7,"name":"recall-1","bbox":[312,258,140,212]}
+{"kind":"shape","id":"sh/utg7i5gj","slide":7,"name":"recall-2","bbox":[570,258,140,212]}
+{"kind":"shape","id":"sh/5krqxkz6","slide":7,"name":"recall-3","bbox":[828,258,140,212]}
+{"kind":"shape","id":"sh/4jipofyl","slide":7,"name":"recall-4","bbox":[1086,258,140,212]}
+{"kind":"shape","id":"sh/6hczy94b","slide":7,"bbox":[194,364,118,0]}
+{"kind":"shape","id":"sh/7il07e5w","slide":7,"bbox":[452,364,118,0]}
+{"kind":"shape","id":"sh/8juh0zmh","slide":7,"bbox":[710,364,118,0]}
+{"kind":"shape","id":"sh/tk3it4n2","slide":7,"bbox":[968,364,118,0]}
+{"kind":"textbox","id":"sh/ulcz294n","slide":7,"name":"rn-0","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[72,278,44,24]}
+{"kind":"textbox","id":"sh/fml0ve5s","slide":7,"name":"rt-0","text":"離站","textPreview":"離站","textChars":2,"textLines":1,"bbox":[72,318,104,32]}
+{"kind":"textbox","id":"sh/gnuh4jmd","slide":7,"name":"rd-0","text":"未完成章節\n保留最後卡點","textPreview":"未完成章節 | 保留最後卡點","textChars":12,"textLines":2,"bbox":[72,368,104,70]}
+{"kind":"textbox","id":"sh/h8nixony","slide":7,"name":"rn-1","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[330,278,44,24]}
+{"kind":"textbox","id":"sh/apszqpo3","slide":7,"name":"rt-1","text":"等待窗","textPreview":"等待窗","textChars":3,"textLines":1,"bbox":[330,318,104,32]}
+{"kind":"textbox","id":"sh/bq1gzu5o","slide":7,"name":"rd-1","text":"24h / 72h\n頻率與同意控管","textPreview":"24h / 72h | 頻率與同意控管","textChars":17,"textLines":2,"bbox":[330,368,104,70]}
+{"kind":"textbox","id":"sh/zuxwrqlg","slide":7,"name":"rn-2","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[588,278,44,24]}
+{"kind":"textbox","id":"sh/etofylkv","slide":7,"name":"rt-2","text":"召回","textPreview":"召回","textChars":2,"textLines":1,"bbox":[588,318,104,32]}
+{"kind":"textbox","id":"sh/1wfetg3m","slide":7,"name":"rd-2","text":"Email / Push\n一個具體任務","textPreview":"Email / Push | 一個具體任務","textChars":19,"textLines":2,"bbox":[588,368,104,70]}
+{"kind":"textbox","id":"sh/0v6x0v21","slide":7,"name":"rn-3","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[846,278,44,24]}
+{"kind":"textbox","id":"sh/rqxwn6lk","slide":7,"name":"rt-3","text":"Deep Link","textPreview":"Deep Link","textChars":9,"textLines":1,"bbox":[846,318,104,32]}
+{"kind":"textbox","id":"sh/qp4fu14z","slide":7,"name":"rd-3","text":"直接回到\n片段＋解法","textPreview":"直接回到 | 片段＋解法","textChars":10,"textLines":2,"bbox":[846,368,104,70]}
+{"kind":"textbox","id":"sh/dsfepg3a","slide":7,"name":"rn-4","text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1104,278,44,24]}
+{"kind":"textbox","id":"sh/cr6xwbm5","slide":7,"name":"rt-4","text":"量測","textPreview":"量測","textChars":2,"textLines":1,"bbox":[1104,318,104,32]}
+{"kind":"textbox","id":"sh/bmhwzalo","slide":7,"name":"rd-4","text":"回站／恢復／完課\n歸因到 intervention","textPreview":"回站／恢復／完課 | 歸因到 intervention","textChars":25,"textLines":2,"bbox":[1104,368,104,70]}
+{"kind":"shape","id":"sh/al8f65k3","slide":7,"name":"message","bbox":[316,520,648,108]}
+{"kind":"shape","id":"sh/s72t072l","slide":7,"name":"pill-個人化召回","bbox":[340,540,124,30]}
+{"kind":"textbox","id":"sh/t8butsj6","slide":7,"name":"pilltxt-個人化召回","text":"個人化召回","textPreview":"個人化召回","textChars":5,"textLines":1,"bbox":[340,540,124,30]}
+{"kind":"textbox","id":"sh/650byxkf","slide":7,"name":"msg-title","text":"「你停在 JOIN 的共同欄位，2 分鐘看一個生活案例」","textPreview":"「你停在 JOIN 的共同欄位，2 分鐘看一個生活案例」","textChars":28,"textLines":1,"bbox":[480,536,456,36]}
+{"kind":"textbox","id":"sh/76tcr210","slide":7,"name":"msg-small","text":"不是泛用提醒；是把上次未解決的問題，變成這次可完成的任務。","textPreview":"不是泛用提醒；是把上次未解決的問題，變成這次可完成的任務。","textChars":29,"textLines":1,"bbox":[480,580,456,26]}
+{"kind":"textbox","id":"sh/gv2t47ix","slide":7,"name":"footer","text":"隱私與信任：匿名 ID、同意管理、頻率上限、退訂、避免敏感對話進入通知內容","textPreview":"隱私與信任：匿名 ID、同意管理、頻率上限、退訂、避免敏感對話進入通知內容","textChars":37,"textLines":1,"bbox":[48,692,1160,18]}
+{"kind":"notes","id":"nt/ar2lmz","slide":7,"text":""}
+{"kind":"slide","id":"sl/89jhti","slide":8,"title":"08","textShapes":29}
+{"kind":"textbox","id":"sh/kjitkr6l","slide":8,"name":"num-8","text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[48,42,52,28]}
+{"kind":"textbox","id":"sh/zi9crmp0","slide":8,"name":"eyebrow-8","text":"PROTOTYPE","textPreview":"PROTOTYPE","textChars":9,"textLines":1,"bbox":[104,42,420,28]}
+{"kind":"textbox","id":"sh/yh0bihof","slide":8,"name":"title-8","text":"不是概念圖：核心學習恢復流程已可操作","textPreview":"不是概念圖：核心學習恢復流程已可操作","textChars":18,"textLines":1,"bbox":[48,78,1160,62]}
+{"kind":"textbox","id":"sh/xgrupw7u","slide":8,"name":"sub-8","text":"桌面與手機響應式；一鍵觸發情境，不依賴模型等待，現場可穩定 Reset。","textPreview":"桌面與手機響應式；一鍵觸發情境，不依賴模型等待，現場可穩定 Reset。","textChars":36,"textLines":1,"bbox":[48,142,1120,40]}
+{"kind":"shape","id":"sh/cfitgr6p","slide":8,"name":"screen","bbox":[48,210,770,412]}
+{"kind":"shape","id":"sh/bepcnmp4","slide":8,"name":"screen-header","bbox":[48,210,770,38]}
+{"kind":"shape","id":"sh/adgbehoj","slide":8,"name":"pill-▶ LearnPulse","bbox":[68,216,116,30]}
+{"kind":"textbox","id":"sh/pc7ulc7y","slide":8,"name":"pilltxt-▶ LearnPulse","text":"▶ LearnPulse","textPreview":"▶ LearnPulse","textChars":12,"textLines":1,"bbox":[68,216,116,30]}
+{"kind":"textbox","id":"sh/orytc76d","slide":8,"name":"nav","text":"探索課程    我的學習    學習專區","textPreview":"探索課程    我的學習    學習專區","textChars":20,"textLines":1,"bbox":[206,220,270,20]}
+{"kind":"shape","id":"sh/ah0bup0r","slide":8,"name":"chapters","bbox":[68,270,146,316]}
+{"kind":"textbox","id":"sh/bi9c3uhc","slide":8,"name":"chap-title","text":"課程章節","textPreview":"課程章節","textChars":4,"textLines":1,"bbox":[84,286,110,20]}
+{"kind":"textbox","id":"sh/wjitwzix","slide":8,"name":"ch-0","text":"✓ 關聯欄位","textPreview":"✓ 關聯欄位","textChars":6,"textLines":1,"bbox":[86,306,110,40]}
+{"kind":"shape","id":"sh/x4ru54zi","slide":8,"name":"active-ch","bbox":[78,346,126,50]}
+{"kind":"textbox","id":"sh/mdgbqp0v","slide":8,"name":"ch-1","text":"2 JOIN 串表","textPreview":"2 JOIN 串表","textChars":9,"textLines":1,"bbox":[86,360,110,40]}
+{"kind":"textbox","id":"sh/ne9czuhg","slide":8,"name":"ch-2","text":"3 INNER JOIN","textPreview":"3 INNER JOIN","textChars":12,"textLines":1,"bbox":[86,414,110,40]}
+{"kind":"textbox","id":"sh/ofitsfil","slide":8,"name":"ch-3","text":"4 知識挑戰","textPreview":"4 知識挑戰","textChars":6,"textLines":1,"bbox":[86,468,110,40]}
+{"kind":"shape","id":"sh/9gru1kz6","slide":8,"name":"mini-video","bbox":[230,270,354,250]}
+{"kind":"textbox","id":"sh/e9gbm50j","slide":8,"name":"mini-video-text","text":"用 JOIN 串起\n兩張資料表","textPreview":"用 JOIN 串起 | 兩張資料表","textChars":15,"textLines":2,"bbox":[252,342,280,70]}
+{"kind":"shape","id":"sh/zapsvah4","slide":8,"name":"mini-prog-bg","bbox":[250,478,308,5]}
+{"kind":"shape","id":"sh/3el836xw","slide":8,"name":"mini-prog","bbox":[250,478,156,5]}
+{"kind":"shape","id":"sh/2tcru1gb","slide":8,"bbox":[400,474,12,12]}
+{"kind":"shape","id":"sh/pgnq5gf2","slide":8,"name":"mini-ai","bbox":[600,270,198,316]}
+{"kind":"textbox","id":"sh/4fe9wbyh","slide":8,"name":"mini-ai-label","text":"AI LEARNING COMPANION","textPreview":"AI LEARNING COMPANION","textChars":21,"textLines":1,"bbox":[616,286,166,18]}
+{"kind":"textbox","id":"sh/ri587qx8","slide":8,"name":"mini-ai-head","text":"換個方式理解","textPreview":"換個方式理解","textChars":6,"textLines":1,"bbox":[616,316,166,30]}
+{"kind":"shape","id":"sh/qhwrylgn","slide":8,"name":"mini-answer","bbox":[616,362,166,112]}
+{"kind":"textbox","id":"sh/dknq9gfy","slide":8,"name":"mini-answer-text","text":"先找兩張表共有的欄位，\n例如 member_id。","textPreview":"先找兩張表共有的欄位， | 例如 member_id。","textChars":25,"textLines":2,"bbox":[630,382,138,72]}
+{"kind":"shape","id":"sh/cje90vyd","slide":8,"name":"mini-button","bbox":[616,492,166,38]}
+{"kind":"textbox","id":"sh/7m18vmxo","slide":8,"name":"mini-button-t","text":"用生活例子說明","textPreview":"用生活例子說明","textChars":7,"textLines":1,"bbox":[616,492,166,38]}
+{"kind":"textbox","id":"sh/6ls7mhg3","slide":8,"name":"flow-label","text":"現場 Demo：90 秒完成閉環","textPreview":"現場 Demo：90 秒完成閉環","textChars":16,"textLines":1,"bbox":[860,214,340,28]}
+{"kind":"shape","id":"sh/wf6xg3ap","slide":8,"bbox":[868,264,28,28]}
+{"kind":"textbox","id":"sh/xgfe9ora","slide":8,"name":"fn-0","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[870,266,24,24]}
+{"kind":"textbox","id":"sh/adofetsz","slide":8,"name":"ft-0","text":"觸發困惑情境","textPreview":"觸發困惑情境","textChars":6,"textLines":1,"bbox":[916,258,278,40]}
+{"kind":"shape","id":"sh/bexw7y94","slide":8,"name":"fl-0","bbox":[880,294,4,40]}
+{"kind":"shape","id":"sh/or6xcjat","slide":8,"bbox":[868,332,28,28]}
+{"kind":"textbox","id":"sh/psfe5ore","slide":8,"name":"fn-1","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[870,334,24,24]}
+{"kind":"textbox","id":"sh/2p4fa9sn","slide":8,"name":"ft-1","text":"接受生活案例","textPreview":"接受生活案例","textChars":6,"textLines":1,"bbox":[916,326,278,40]}
+{"kind":"shape","id":"sh/nqdw3e98","slide":8,"name":"fl-1","bbox":[880,362,4,40]}
+{"kind":"shape","id":"sh/8nqxonax","slide":8,"bbox":[868,400,28,28]}
+{"kind":"textbox","id":"sh/tozyh8ri","slide":8,"name":"fn-2","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[870,402,24,24]}
+{"kind":"textbox","id":"sh/5sbu907u","slide":8,"name":"ft-2","text":"繼續播放","textPreview":"繼續播放","textChars":4,"textLines":1,"bbox":[916,394,278,40]}
+{"kind":"shape","id":"sh/4rit0fq9","slide":8,"name":"fl-2","bbox":[880,430,4,40]}
+{"kind":"shape","id":"sh/3q9c7ap4","slide":8,"bbox":[868,468,28,28]}
+{"kind":"textbox","id":"sh/ip0by58j","slide":8,"name":"fn-3","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[870,470,24,24]}
+{"kind":"textbox","id":"sh/dwbudk76","slide":8,"name":"ft-3","text":"完成章節","textPreview":"完成章節","textChars":4,"textLines":1,"bbox":[916,462,278,40]}
+{"kind":"shape","id":"sh/sv2t4fql","slide":8,"name":"fl-3","bbox":[880,498,4,40]}
+{"kind":"shape","id":"sh/rutcbap0","slide":8,"bbox":[868,536,28,28]}
+{"kind":"textbox","id":"sh/qtkb258f","slide":8,"name":"fn-4","text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[870,538,24,24]}
+{"kind":"textbox","id":"sh/1kvuh472","slide":8,"name":"ft-4","text":"顯示概念拼圖","textPreview":"顯示概念拼圖","textChars":6,"textLines":1,"bbox":[916,530,278,40]}
+{"kind":"shape","id":"sh/0jmt8zqh","slide":8,"name":"done","bbox":[858,620,340,46]}
+{"kind":"textbox","id":"sh/y5wr2hoz","slide":8,"name":"done-t","text":"Prototype：核心 P0 已完成","textPreview":"Prototype：核心 P0 已完成","textChars":19,"textLines":1,"bbox":[858,620,340,46]}
+{"kind":"textbox","id":"sh/j658bm5k","slide":8,"name":"footer","text":"產品依據：目前 /prototype 與正式 /learn/[lessonId] 流程；畫面於本簡報以可編輯元件重建","textPreview":"產品依據：目前 /prototype 與正式 /learn/[lessonId] 流程；畫面於本簡報以可編輯元件重建","textChars":58,"textLines":1,"bbox":[48,692,1160,18]}
+{"kind":"notes","id":"nt/89jhti","slide":8,"text":""}
+{"kind":"slide","id":"sl/se2is5","slide":9,"title":"09","textShapes":25}
+{"kind":"textbox","id":"sh/hw3udoru","slide":9,"name":"num-9","text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[48,42,52,28]}
+{"kind":"textbox","id":"sh/utsbi983","slide":9,"name":"eyebrow-9","text":"AWS ARCHITECTURE","textPreview":"AWS ARCHITECTURE","textChars":16,"textLines":1,"bbox":[104,42,420,28]}
+{"kind":"textbox","id":"sh/vu1cbe9o","slide":9,"name":"title-9","text":"即時介入走熱路徑，模型優化走冷路徑","textPreview":"即時介入走熱路徑，模型優化走冷路徑","textChars":17,"textLines":1,"bbox":[48,78,1160,62]}
+{"kind":"textbox","id":"sh/8ratgzad","slide":9,"name":"sub-9","text":"Prototype 先用 Lambda Rule Engine；取得正式資料後，可無痛升級至 SageMaker / Bedrock。","textPreview":"Prototype 先用 Lambda Rule Engine；取得正式資料後，可無痛升級至 SageMaker / Bedrock。","textChars":67,"textLines":1,"bbox":[48,142,1120,40]}
+{"kind":"textbox","id":"sh/9sju94ri","slide":9,"name":"lane-0","text":"EXPERIENCE","textPreview":"EXPERIENCE","textChars":10,"textLines":1,"bbox":[48,236,120,22]}
+{"kind":"shape","id":"sh/mpsbeps7","slide":9,"name":"lane-line-0","bbox":[164,218,2,76]}
+{"kind":"textbox","id":"sh/7q1c7u9s","slide":9,"name":"lane-1","text":"REAL-TIME","textPreview":"REAL-TIME","textChars":9,"textLines":1,"bbox":[48,346,120,22]}
+{"kind":"shape","id":"sh/knqtcza1","slide":9,"name":"lane-line-1","bbox":[164,328,2,76]}
+{"kind":"textbox","id":"sh/loju54rm","slide":9,"name":"lane-2","text":"DATA & MODEL","textPreview":"DATA & MODEL","textChars":12,"textLines":1,"bbox":[48,456,120,22]}
+{"kind":"shape","id":"sh/x47mds3a","slide":9,"name":"lane-line-2","bbox":[164,438,2,76]}
+{"kind":"textbox","id":"sh/w3el472p","slide":9,"name":"lane-3","text":"RECALL & OPS","textPreview":"RECALL & OPS","textChars":12,"textLines":1,"bbox":[48,566,120,22]}
+{"kind":"shape","id":"sh/v254b2l4","slide":9,"name":"lane-line-3","bbox":[164,548,2,76]}
+{"kind":"shape","id":"sh/ahw32x4j","slide":9,"name":"aws-web","bbox":[190,218,158,72]}
+{"kind":"shape","id":"sh/9gn29s3e","slide":9,"name":"aws-api","bbox":[410,218,176,72]}
+{"kind":"shape","id":"sh/8felgnmt","slide":9,"name":"aws-ws","bbox":[650,218,176,72]}
+{"kind":"shape","id":"sh/ne5k7il8","slide":9,"name":"aws-ui","bbox":[890,218,202,72]}
+{"kind":"shape","id":"sh/mdw3ed4n","slide":9,"bbox":[348,254,62,0]}
+{"kind":"shape","id":"sh/lcn25832","slide":9,"bbox":[586,254,64,0]}
+{"kind":"shape","id":"sh/0bulcnmh","slide":9,"bbox":[826,254,64,0]}
+{"kind":"textbox","id":"sh/cvylsnud","slide":9,"name":"aws-web-t","text":"Next.js Web / App","textPreview":"Next.js Web / App","textChars":17,"textLines":1,"bbox":[190,218,158,72]}
+{"kind":"textbox","id":"sh/dw7mlsby","slide":9,"name":"aws-api-t","text":"API Gateway","textPreview":"API Gateway","textChars":11,"textLines":1,"bbox":[410,218,176,72]}
+{"kind":"textbox","id":"sh/qtg3qdc7","slide":9,"name":"aws-ws-t","text":"WebSocket API","textPreview":"WebSocket API","textChars":13,"textLines":1,"bbox":[650,218,176,72]}
+{"kind":"textbox","id":"sh/rup4jits","slide":9,"name":"aws-ui-t","text":"站內即時介入","textPreview":"站內即時介入","textChars":6,"textLines":1,"bbox":[890,218,202,72]}
+{"kind":"shape","id":"sh/4rylo3uh","slide":9,"name":"aws-events","bbox":[190,328,158,72]}
+{"kind":"shape","id":"sh/ps7mh8b2","slide":9,"name":"aws-lambda","bbox":[410,328,176,72]}
+{"kind":"shape","id":"sh/2pw3mdcb","slide":9,"name":"aws-ddb","bbox":[650,328,176,72]}
+{"kind":"shape","id":"sh/3qpkfytw","slide":9,"name":"aws-log","bbox":[890,328,202,72]}
+{"kind":"shape","id":"sh/onil07ul","slide":9,"bbox":[348,364,62,0]}
+{"kind":"shape","id":"sh/9ormtcb6","slide":9,"bbox":[586,364,64,0]}
+{"kind":"shape","id":"sh/juxgfqhk","slide":9,"bbox":[826,364,64,0]}
+{"kind":"textbox","id":"sh/it4f650z","slide":9,"name":"aws-events-t","text":"Learning Events","textPreview":"Learning Events","textChars":15,"textLines":1,"bbox":[190,328,158,72]}
+{"kind":"textbox","id":"sh/5wfyh0zq","slide":9,"name":"aws-lambda-t","text":"Lambda Rule Engine","textPreview":"Lambda Rule Engine","textChars":18,"textLines":1,"bbox":[410,328,176,72]}
+{"kind":"textbox","id":"sh/4v6x8vi5","slide":9,"name":"aws-ddb-t","text":"DynamoDB\nSession State","textPreview":"DynamoDB | Session State","textChars":22,"textLines":2,"bbox":[650,328,176,72]}
+{"kind":"textbox","id":"sh/ryxgjahg","slide":9,"name":"aws-log-t","text":"CloudWatch","textPreview":"CloudWatch","textChars":10,"textLines":1,"bbox":[890,328,202,72]}
+{"kind":"shape","id":"sh/6xofa50b","slide":9,"name":"aws-fire","bbox":[190,438,158,72]}
+{"kind":"shape","id":"sh/tkfylkzm","slide":9,"name":"aws-s3","bbox":[410,438,176,72]}
+{"kind":"shape","id":"sh/sj6xcfi1","slide":9,"name":"aws-athena","bbox":[650,438,176,72]}
+{"kind":"shape","id":"sh/72dw76hc","slide":9,"name":"aws-ml","bbox":[890,438,202,72]}
+{"kind":"shape","id":"sh/m1kfy10r","slide":9,"bbox":[348,474,62,0]}
+{"kind":"shape","id":"sh/e5ofel8n","slide":9,"bbox":[586,474,64,0]}
+{"kind":"shape","id":"sh/z6xgnqp8","slide":9,"bbox":[826,474,64,0]}
+{"kind":"textbox","id":"sh/07qxgbqt","slide":9,"name":"aws-fire-t","text":"Data Firehose","textPreview":"Data Firehose","textChars":13,"textLines":1,"bbox":[190,438,158,72]}
+{"kind":"textbox","id":"sh/18zypg7e","slide":9,"name":"aws-s3-t","text":"Amazon S3","textPreview":"Amazon S3","textChars":9,"textLines":1,"bbox":[410,438,176,72]}
+{"kind":"textbox","id":"sh/m98fil8z","slide":9,"name":"aws-athena-t","text":"Glue + Athena","textPreview":"Glue + Athena","textChars":13,"textLines":1,"bbox":[650,438,176,72]}
+{"kind":"textbox","id":"sh/nahgrqp4","slide":9,"name":"aws-ml-t","text":"SageMaker / Bedrock\nFuture model","textPreview":"SageMaker / Bedrock | Future model","textChars":32,"textLines":2,"bbox":[890,438,202,72]}
+{"kind":"shape","id":"sh/8bqxkvqp","slide":9,"name":"aws-sch","bbox":[190,548,158,72]}
+{"kind":"shape","id":"sh/9czyt07a","slide":9,"name":"aws-recall","bbox":[410,548,176,72]}
+{"kind":"shape","id":"sh/ad8fm58v","slide":9,"name":"aws-ses","bbox":[650,548,176,72]}
+{"kind":"shape","id":"sh/vyhgvapg","slide":9,"name":"aws-deep","bbox":[890,548,202,72]}
+{"kind":"shape","id":"sh/5s3il4ri","slide":9,"bbox":[348,584,62,0]}
+{"kind":"shape","id":"sh/k7u1szax","slide":9,"bbox":[586,584,64,0]}
+{"kind":"shape","id":"sh/j6l0ju9c","slide":9,"bbox":[826,584,64,0]}
+{"kind":"textbox","id":"sh/i5sjqps7","slide":9,"name":"aws-sch-t","text":"EventBridge\nScheduler","textPreview":"EventBridge | Scheduler","textChars":21,"textLines":2,"bbox":[190,548,158,72]}
+{"kind":"textbox","id":"sh/tw3ip4ru","slide":9,"name":"aws-recall-t","text":"Recall Lambda","textPreview":"Recall Lambda","textChars":13,"textLines":1,"bbox":[410,548,176,72]}
+{"kind":"textbox","id":"sh/svu1wza9","slide":9,"name":"aws-ses-t","text":"SES / SNS","textPreview":"SES / SNS","textChars":9,"textLines":1,"bbox":[650,548,176,72]}
+{"kind":"textbox","id":"sh/7ul0nu9o","slide":9,"name":"aws-deep-t","text":"Deep Link 回課程","textPreview":"Deep Link 回課程","textChars":13,"textLines":1,"bbox":[890,548,202,72]}
+{"kind":"shape","id":"sh/6tcju9s3","slide":9,"bbox":[498,290,0,38]}
+{"kind":"shape","id":"sh/h0nitorq","slide":9,"bbox":[269,400,0,38]}
+{"kind":"shape","id":"sh/gze10ja5","slide":9,"bbox":[269,400,469,148]}
+{"kind":"textbox","id":"sh/0f6tcr2t","slide":9,"name":"footer","text":"Proposed AWS architecture｜參考：AWS API Gateway WebSocket、EventBridge Scheduler、Amazon SES 官方文件","textPreview":"Proposed AWS architecture｜參考：AWS API Gateway WebSocket、EventBridge Scheduler、Amazon SES 官方文件","textChars":92,"textLines":1,"bbox":[48,692,1160,18]}
+{"kind":"notes","id":"nt/se2is5","slide":9,"text":""}
+{"kind":"slide","id":"sl/1en9k1","slide":10,"title":"10","textShapes":24}
+{"kind":"textbox","id":"sh/buhsnipc","slide":10,"name":"num-10","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[48,42,52,28]}
+{"kind":"textbox","id":"sh/wvqtgnqx","slide":10,"name":"eyebrow-10","text":"IMPACT & NEXT","textPreview":"IMPACT & NEXT","textChars":13,"textLines":1,"bbox":[104,42,420,28]}
+{"kind":"textbox","id":"sh/xwzap87i","slide":10,"name":"title-10","text":"用 Recovery Rate 驗證學習價值，再連到留存與營收","textPreview":"用 Recovery Rate 驗證學習價值，再連到留存與營收","textChars":31,"textLines":1,"bbox":[48,78,1160,62]}
+{"kind":"textbox","id":"sh/yx8bid83","slide":10,"name":"sub-10","text":"先證明「介入後繼續學」，再驗證「完成更多、回來更多、續購更多」。","textPreview":"先證明「介入後繼續學」，再驗證「完成更多、回來更多、續購更多」。","textChars":32,"textLines":1,"bbox":[48,142,1120,40]}
+{"kind":"shape","id":"sh/jyhsrip8","slide":10,"name":"north","bbox":[48,214,342,364]}
+{"kind":"textbox","id":"sh/kzatknqt","slide":10,"name":"north-label","text":"NORTH STAR","textPreview":"NORTH STAR","textChars":10,"textLines":1,"bbox":[78,244,160,22]}
+{"kind":"textbox","id":"sh/l0jats7e","slide":10,"name":"north-value","text":"Recovery\nRate","textPreview":"Recovery | Rate","textChars":13,"textLines":2,"bbox":[78,290,260,96]}
+{"kind":"textbox","id":"sh/61sbmx8z","slide":10,"name":"north-formula","text":"介入後恢復觀看或完課\n÷ Agent 介入總次數","textPreview":"介入後恢復觀看或完課 | ÷ Agent 介入總次數","textChars":24,"textLines":2,"bbox":[78,410,260,64]}
+{"kind":"shape","id":"sh/7m1sv2pk","slide":10,"name":"target","bbox":[78,502,260,50]}
+{"kind":"textbox","id":"sh/fytonm9s","slide":10,"name":"target-t","text":"目標：A/B 驗證，不預填結果","textPreview":"目標：A/B 驗證，不預填結果","textChars":15,"textLines":1,"bbox":[78,502,260,50]}
+{"kind":"textbox","id":"sh/exk7u187","slide":10,"name":"chain-label","text":"VALUE CHAIN","textPreview":"VALUE CHAIN","textChars":11,"textLines":1,"bbox":[432,214,180,22]}
+{"kind":"shape","id":"sh/10b6pwri","slide":10,"name":"kpi-0","bbox":[432,252,220,140]}
+{"kind":"shape","id":"sh/gz2pwrqd","slide":10,"name":"kpi-1","bbox":[684,252,220,140]}
+{"kind":"shape","id":"sh/ra9ojm9g","slide":10,"name":"kpi-2","bbox":[936,252,220,140]}
+{"kind":"shape","id":"sh/6907qh8v","slide":10,"bbox":[652,322,32,0]}
+{"kind":"shape","id":"sh/tcb6lwrm","slide":10,"bbox":[904,322,32,0]}
+{"kind":"textbox","id":"sh/sbipsrq1","slide":10,"name":"kpt-0","text":"學習","textPreview":"學習","textChars":2,"textLines":1,"bbox":[454,274,176,28]}
+{"kind":"textbox","id":"sh/b6d8vq90","slide":10,"name":"kpd-0","text":"章節完成率\nContinue Watching","textPreview":"章節完成率 | Continue Watching","textChars":23,"textLines":2,"bbox":[454,318,176,54]}
+{"kind":"textbox","id":"sh/q5472l8f","slide":10,"name":"kpt-1","text":"留存","textPreview":"留存","textChars":2,"textLines":1,"bbox":[706,274,176,28]}
+{"kind":"textbox","id":"sh/6d8ja9wj","slide":10,"name":"kpd-1","text":"7 日回站率\nReturn-to-Learning","textPreview":"7 日回站率 | Return-to-Learning","textChars":25,"textLines":2,"bbox":[706,318,176,54]}
+{"kind":"textbox","id":"sh/7yh0jex4","slide":10,"name":"kpt-2","text":"商業","textPreview":"商業","textChars":2,"textLines":1,"bbox":[958,274,176,28]}
+{"kind":"textbox","id":"sh/8zq1cjep","slide":10,"name":"kpd-2","text":"續購／訂閱\n推薦轉換","textPreview":"續購／訂閱 | 推薦轉換","textChars":10,"textLines":2,"bbox":[958,318,176,54]}
+{"kind":"textbox","id":"sh/t0jilofa","slide":10,"name":"next-label","text":"NEXT 3 STEPS","textPreview":"NEXT 3 STEPS","textChars":12,"textLines":1,"bbox":[432,440,180,22]}
+{"kind":"shape","id":"sh/u1sjetwv","slide":10,"name":"pill-1","bbox":[432,480,34,30]}
+{"kind":"textbox","id":"sh/v21knexg","slide":10,"name":"pilltxt-1","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[432,480,34,30]}
+{"kind":"textbox","id":"sh/g3a1gje1","slide":10,"name":"next-0","text":"接官方資料：建立事件基準與標籤","textPreview":"接官方資料：建立事件基準與標籤","textChars":15,"textLines":1,"bbox":[482,480,674,34]}
+{"kind":"shape","id":"sh/h4j2pofm","slide":10,"name":"pill-2","bbox":[432,532,34,30]}
+{"kind":"textbox","id":"sh/a5oj2pwr","slide":10,"name":"pilltxt-2","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[432,532,34,30]}
+{"kind":"textbox","id":"sh/b6x0buxw","slide":10,"name":"next-1","text":"小流量 A/B：比較介入與對照組","textPreview":"小流量 A/B：比較介入與對照組","textChars":16,"textLines":1,"bbox":[482,532,674,34]}
+{"kind":"shape","id":"sh/d0nmhszu","slide":10,"name":"pill-3","bbox":[432,584,34,30]}
+{"kind":"textbox","id":"sh/szel8ny9","slide":10,"name":"pilltxt-3","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[432,584,34,30]}
+{"kind":"textbox","id":"sh/ryl4fiho","slide":10,"name":"next-2","text":"規模化：模型化＋多課程＋營運儀表板","textPreview":"規模化：模型化＋多課程＋營運儀表板","textChars":17,"textLines":1,"bbox":[482,584,674,34]}
+{"kind":"shape","id":"sh/qxc36dg3","slide":10,"name":"ask","bbox":[432,646,724,40]}
+{"kind":"textbox","id":"sh/1onmlczq","slide":10,"name":"ask-t","text":"決策請求：批准以 PressPlay 真實資料啟動 2 週驗證 Sprint","textPreview":"決策請求：批准以 PressPlay 真實資料啟動 2 週驗證 Sprint","textChars":38,"textLines":1,"bbox":[432,646,724,40]}
+{"kind":"textbox","id":"sh/03elc7y5","slide":10,"name":"footer","text":"所有 uplift 皆待正式資料與實驗驗證；Demo 數字與 AI Output 均清楚標示 Mock","textPreview":"所有 uplift 皆待正式資料與實驗驗證；Demo 數字與 AI Output 均清楚標示 Mock","textChars":51,"textLines":1,"bbox":[48,692,1160,18]}
+{"kind":"notes","id":"nt/1en9k1","slide":10,"text":""}

@@ -1,0 +1,16 @@
+# 絕對不要 commit 這個
+.env
+
+# 資料快取與產出
+.cache/
+out/*.csv
+out/*.pkl
+
+# 主辦方機密資料集，不要進版控
+*.xlsx
+*.pdf
+
+__pycache__/
+*.pyc
+.venv/
+venv/
