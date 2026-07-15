@@ -15,7 +15,7 @@ export function AppShell({ children }: { children: ReactNode }) {
         <header className="border-b border-slate-100 bg-white/95 backdrop-blur-xl">
           <div className="flex min-h-[76px] items-center justify-between gap-6 px-5 py-3 sm:px-8 lg:px-10">
             <Link href="/" className="flex shrink-0 items-center gap-3">
-              <img src={asset("/assets/pressplay_logo.jpg")} alt="PressPlay Academy" className="h-8 w-auto" />
+              <img src={asset("/assets/ppc_academy.jpg")} alt="PressPlay Academy" className="h-8 w-auto" />
               <span className="hidden text-base font-black tracking-tight text-slate-900 sm:inline">· 學習城市</span>
             </Link>
 
