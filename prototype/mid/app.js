@@ -857,7 +857,7 @@ function openReels(idx = 0) {
         </div>
 
         <div class="reel-media">
-          <video muted playsinline preload="none" poster="assets/thumbs/${c.id}.jpg"></video>
+          <video playsinline preload="none" poster="assets/thumbs/${c.id}.jpg"></video>
           <div class="vspin" hidden></div>
         </div>
 
