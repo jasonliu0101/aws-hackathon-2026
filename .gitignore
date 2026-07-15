@@ -14,3 +14,8 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+
+# Node 依賴與 build 產物（協作端 npm install / build 重建，不進版控）
+node_modules/
+.next/
+out/
