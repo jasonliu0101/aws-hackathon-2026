@@ -237,7 +237,7 @@ python3 prototype/tools/build_data.py
 
 | | 網址 |
 |---|---|
-| **線上 Demo** | https://jasonliu0101.github.io/ppa/ |
+| **線上 Demo** | https://d2ya9sj3npaaes.cloudfront.net |
 | 動線入口（課前測驗） | http://localhost:8899 |
 | mid 創作者後台 | http://localhost:8899/mid/creator.html |
 | end 學習城市 | http://localhost:3000 |
@@ -260,12 +260,3 @@ aws-hackathon-2026/
 ├── out/                資料分析產出（concept_edges · member_features）
 └── requirements.txt    Python 依賴
 ```
-
----
-
-<div align="center">
-
-**我們不獎勵「連續」，我們獎勵「回來」**
-—— 因為對成人學習者來說，能重新開始，比從不中斷更重要。
-
-</div>
