@@ -57,7 +57,7 @@ export function SuccessModal({
             </div>
             {info.leveledUp && (
               <div className="rounded-xl bg-brand-sun/20 py-1.5 text-xs font-semibold text-amber-700 animate-pop-in">
-                🎉 建築升級了！
+                建築升級了！
               </div>
             )}
           </div>

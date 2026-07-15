@@ -73,6 +73,11 @@ export async function generateCatchupSummary(course: Course): Promise<string[]> 
       "先給逐字稿，再要求結構化輸出。",
       "把 AI 當協作者，人負責判斷與收尾。",
     ],
+    "c-dental": [
+      "貝氏刷牙法讓牙刷與牙齦約呈 45 度角。",
+      "刷毛要輕碰牙齒與牙齦交界的牙齦溝。",
+      "每兩顆牙來回輕刷約 10 下，完整刷牙至少 2 到 3 分鐘。",
+    ],
   };
   return delay(
     map[course.id] ?? [

@@ -8,6 +8,7 @@ import { useStore } from "@/lib/store";
 import { recommendNextReview } from "@/lib/ai";
 import { midUrl } from "@/lib/flow";
 import { CourseCard } from "@/components/courses/CourseCard";
+import { SuccessModal, type SuccessInfo } from "@/components/common/SuccessModal";
 import { Card, CardContent } from "@/components/ui/card";
 
 type Filter = "in-progress" | "review" | "completed";
@@ -21,6 +22,7 @@ const FILTERS: { id: Filter; label: string }[] = [
 export default function CoursesPage() {
   const { state, dispatch } = useStore();
   const [filter, setFilter] = useState<Filter>("in-progress");
+  const [success, setSuccess] = useState<SuccessInfo | null>(null);
   const [reco, setReco] = useState<string>("");
   const [category, setCategory] = useState<CategoryId | "all">("all");
   const [sourceTaskId, setSourceTaskId] = useState<string | null>(null);
@@ -46,20 +48,22 @@ export default function CoursesPage() {
     return state.courses.filter((c) => c.status === "in-progress" && (category === "all" || c.category === category));
   }, [state.courses, filter, category]);
 
-  // 「去上課」= 前往 mid 的 PPA 播放器（真正的學習發生在那裡）。
-  // 先把觀看記進學習城市的狀態（localStorage），這樣從 mid 回來時，城市已經長大了 ——
-  // 這正是這個產品的正向回饋：city → 去上課 → 回來看它長高。
+  // 「繼續學習」= 前往 mid 的 PPA 播放器（真正的學習發生在那裡），不再本地模擬觀看。
   function watch(course: Course) {
     const mins = Math.min(course.minutesLeft || 5, 5);
     dispatch({ type: "WATCH_COURSE", courseId: course.id, minutes: mins });
     const sourceTask = state.tasks.find((task) => task.id === sourceTaskId && !task.done && task.kind === "watch");
-    if (sourceTask) dispatch({ type: "COMPLETE_TASK", taskId: sourceTask.id });
+    if (sourceTask) {
+      dispatch({ type: "COMPLETE_TASK", taskId: sourceTask.id });
+      setSourceTaskId(null);
+    }
     // 讓 reducer 的 localStorage 持久化先跑完，再跳頁
     setTimeout(() => { window.location.href = midUrl(); }, 60);
   }
 
   return (
-    <div className="mx-auto max-w-3xl space-y-5">
+    <div className="app-page-bg min-h-screen px-3 py-5 sm:px-5 lg:px-7">
+      <div className="mx-auto max-w-3xl space-y-5 rounded-[26px] border border-white/80 bg-white p-5 shadow-sm sm:p-7">
       <div>
         <h1 className="text-2xl font-bold">我的課程</h1>
         <p className="mt-1 text-sm text-muted-foreground">
@@ -119,6 +123,9 @@ export default function CoursesPage() {
           這個分類目前沒有課程。
         </p>
       )}
+
+      <SuccessModal info={success} onClose={() => setSuccess(null)} />
+      </div>
     </div>
   );
 }

@@ -22,8 +22,8 @@ const taskTemplates: Record<string, DailyTask> = {
     estMinutes: 3,
     purpose: "趁記憶還新鮮時鞏固，隔天複習能大幅提升長期記憶。",
     reward: "",
-    xp: 15,
-    coins: 20,
+    xp: 20,
+    coins: 30,
     buildingId: "investing",
     done: false,
   },
@@ -35,7 +35,7 @@ const taskTemplates: Record<string, DailyTask> = {
     purpose: "定期複習能將短期記憶轉換為長期記憶。",
     reward: "",
     xp: 25,
-    coins: 35,
+    coins: 40,
     buildingId: "career",
     done: false,
   },
@@ -61,7 +61,7 @@ const taskTemplates: Record<string, DailyTask> = {
     purpose: "開始新課程，穩定的學習進度最重要。",
     reward: "",
     xp: 40,
-    coins: 55,
+    coins: 60,
     buildingId: "baking",
     done: false,
   },
@@ -75,7 +75,7 @@ const taskTemplates: Record<string, DailyTask> = {
     purpose: "用測驗檢查自己是否真的理解，比重看一次更有效。",
     reward: "",
     xp: 15,
-    coins: 25,
+    coins: 20,
     buildingId: "beauty",
     done: false,
   },
@@ -187,9 +187,9 @@ export function generateDailyTasks(context: CoachContext): DailyTask[] {
       purpose: `偵測到影片最近中斷 ${stalledCourse.playbackStalls} 次，先安排短片段並保留進度，降低重新開始的負擔。`,
       buildingId: stalledCourse.category,
       estMinutes: 3,
-      xp: 24,
-      coins: 36,
-      reward: `${buildingNames[stalledCourse.category]}獲得 24 點建設值`,
+      xp: 30,
+      coins: 40,
+      reward: `${buildingNames[stalledCourse.category]}獲得 30 點建設值`,
     });
   }
 
@@ -200,7 +200,7 @@ export function generateDailyTasks(context: CoachContext): DailyTask[] {
       id: "daily-review",
       title: `花 3 分鐘複習昨天學過的 ${buildingNames[strongestBuilding.id]} 觀念`,
       buildingId: strongestBuilding.id,
-      reward: `${buildingNames[strongestBuilding.id]}獲得 15 點建設值`,
+      reward: `${buildingNames[strongestBuilding.id]}獲得 20 點建設值`,
     };
     tasks.push(reviewTask);
   }
@@ -215,9 +215,9 @@ export function generateDailyTasks(context: CoachContext): DailyTask[] {
       id: "daily-watch",
       title: `看完《${courses[courseIdx]}》剩下的 4 分鐘完成本章`,
       buildingId: weakestBuilding.id,
-      xp: 20 + weakestBuilding.level * 2,
-      coins: 25 + weakestBuilding.level * 5,
-      reward: `${buildingNames[weakestBuilding.id]}獲得 ${20 + weakestBuilding.level * 2} 點建設值`,
+      xp: 20 + weakestBuilding.level * 5,
+      coins: 30 + weakestBuilding.level * 10,
+      reward: `${buildingNames[weakestBuilding.id]}獲得 ${20 + weakestBuilding.level * 5} 點建設值`,
       estMinutes: Math.max(3, 5 - weakestBuilding.level),
     };
     tasks.push(watchTask);
@@ -236,9 +236,9 @@ export function generateDailyTasks(context: CoachContext): DailyTask[] {
       id: "daily-quiz",
       title: `回答一題 ${buildingNames[randomBuilding.id]} 的小測驗`,
       buildingId: randomBuilding.id,
-      xp: 12,
+      xp: 15,
       coins: 20,
-      reward: `${buildingNames[randomBuilding.id]}獲得 12 點建設值`,
+      reward: `${buildingNames[randomBuilding.id]}獲得 15 點建設值`,
     };
     tasks.push(quizTask);
   } else {
@@ -250,9 +250,9 @@ export function generateDailyTasks(context: CoachContext): DailyTask[] {
       id: "daily-note",
       title: `為《${courses[courseIdx]}》寫一句學習筆記`,
       buildingId: randomBuilding.id,
-      xp: 18,
-      coins: 28,
-      reward: `${buildingNames[randomBuilding.id]}獲得 18 點建設值`,
+      xp: 20,
+      coins: 30,
+      reward: `${buildingNames[randomBuilding.id]}獲得 20 點建設值`,
     };
     tasks.push(noteTask);
   }
@@ -265,9 +265,9 @@ export function generateDailyTasks(context: CoachContext): DailyTask[] {
       id: "daily-bonus",
       title: `探索新課程：${courseNames[bonusBuilding.id][0]}`,
       buildingId: bonusBuilding.id,
-      xp: 35,
-      coins: 50,
-      reward: `${buildingNames[bonusBuilding.id]}獲得 35 點建設值`,
+      xp: 40,
+      coins: 60,
+      reward: `${buildingNames[bonusBuilding.id]}獲得 40 點建設值`,
       estMinutes: 8,
     };
     tasks.push(bonusTask);

@@ -6,9 +6,9 @@ import type { BuildingLevel } from "@/types";
 
 /** XP awarded per learning action. Mirrors the product spec. */
 export const XP_RULES = {
-  watchPerMinute: 1,
+  watchPerMinute: 2,
   flashcardSet: 10,
-  dailyQuestion: 5,
+  dailyQuestion: 10,
   chapter: 20,
   note: 10,
   courseComplete: 100,

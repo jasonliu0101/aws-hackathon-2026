@@ -10,7 +10,6 @@ import {
   CheckCircle2,
   ChevronLeft,
   ChevronRight,
-  FilePlus2,
   NotebookPen,
   Play,
   RotateCcw,
@@ -49,7 +48,7 @@ export default function CalendarPage() {
   const [weekOffset, setWeekOffset] = useState(0);
 
   const weekDays = useMemo(() => {
-    const anchor = new Date(2026, 6, 14);
+    const anchor = new Date(2026, 6, 15);
     anchor.setDate(anchor.getDate() - weekOffset * 7);
     const start = new Date(anchor);
     start.setDate(anchor.getDate() - anchor.getDay());
@@ -58,7 +57,7 @@ export default function CalendarPage() {
 
   const weekStart = weekDays[0];
   const weekEnd = weekDays[6];
-  const currentKey = "2026-07-14";
+  const currentKey = "2026-07-15";
   const activitiesByDate = useMemo(() => {
     const grouped = new Map<string, ActivityEntry[]>();
     state.activity.forEach((activity) => grouped.set(activity.date, [...(grouped.get(activity.date) ?? []), activity]));
@@ -69,11 +68,11 @@ export default function CalendarPage() {
   const displayHighlights = highlights.length ? highlights : state.activity.filter((activity) => activity.type === "watch").slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-[radial-gradient(circle_at_50%_0%,#dbeafe_0%,#f8fafc_38%,#f8fafc_100%)] px-3 py-5 text-slate-900 sm:px-5 lg:px-7 lg:py-7">
+    <div className="app-page-bg min-h-screen px-3 py-5 text-slate-900 sm:px-5 lg:px-7 lg:py-7">
       <div className="mx-auto max-w-[1380px] space-y-4">
         <div className="flex items-center gap-3 px-1">
           <Link href="/" className="grid h-10 w-10 place-items-center rounded-xl text-slate-700 transition hover:bg-white"><ArrowLeft className="h-5 w-5" /></Link>
-          <div><p className="text-[10px] font-bold uppercase tracking-[.18em] text-indigo-500">Learning calendar</p><h1 className="text-2xl font-black tracking-tight">學習日曆</h1></div>
+          <div><p className="text-[10px] font-bold uppercase tracking-[.18em] text-indigo-500">Learning calendar</p><h1 className="text-2xl font-black tracking-tight text-slate-900">學習日曆</h1></div>
         </div>
 
         <section className="rounded-[22px] border border-white/80 bg-white/90 shadow-sm">
@@ -99,10 +98,7 @@ export default function CalendarPage() {
                         return <div key={activity.id} className="rounded-xl border border-slate-100 bg-white/90 p-2.5"><div className="flex items-start gap-2"><span className={`mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-lg ${meta.className}`}><Icon className="h-3.5 w-3.5" /></span><div className="min-w-0"><p className="text-[10px] font-bold text-slate-500">{meta.label}</p><p className="mt-0.5 line-clamp-2 text-[11px] font-bold leading-4">{activity.title}</p></div></div>{isCurrent && <p className="mt-2 text-right text-[10px] font-black text-indigo-600">+{meta.xp} XP</p>}</div>;
                       })}
                     </div>
-                    <div className="mt-auto pt-3 text-center">
-                      {dayActivities.length === 0 && <p className="mb-3 text-[11px] text-slate-400">今天還沒有紀錄</p>}
-                      <Link href={reviewHref("notes", dayActivities[0]?.category)} className="inline-flex items-center gap-1 text-[11px] font-bold text-indigo-600"><FilePlus2 className="h-3.5 w-3.5" />補寫學習筆記</Link>
-                    </div>
+                    {dayActivities.length === 0 && <p className="mt-auto pt-3 text-center text-[11px] text-slate-400">今天還沒有紀錄</p>}
                   </article>
                 );
               })}

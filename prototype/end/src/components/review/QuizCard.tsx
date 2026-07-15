@@ -75,7 +75,7 @@ export function QuizCard({
             )}
           >
             <div className="font-semibold">
-              {correct ? "答對了！+5 XP 🎉" : "再想想～看看解析"}
+              {correct ? "答對了！+5 XP" : "再想想，看看解析"}
             </div>
             <p className="mt-1 text-muted-foreground">{quiz.explanation}</p>
           </div>

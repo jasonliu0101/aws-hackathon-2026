@@ -13,6 +13,14 @@ export const seedFlashcards: Flashcard[] = [
   { id: "f10", courseId: "c-fin101", front: "三大財報？", back: "損益表、資產負債表、現金流量表。" },
   { id: "f11", courseId: "c-fin101", front: "毛利率反映什麼？", back: "本業的獲利能力。" },
   { id: "f12", courseId: "c-slides", front: "一頁投影片的原則？", back: "一頁一重點，標題直接講結論。" },
+  { id: "f13", courseId: "c-language", front: "如何禮貌請對方再說一次？", back: "可以說 Could you say that again, please?" },
+  { id: "f14", courseId: "c-language", front: "記住新單字的有效方式？", back: "在不同情境中重複提取並實際造句。" },
+  { id: "f15", courseId: "c-fitness", front: "深蹲時膝蓋的方向？", back: "膝蓋方向大致跟腳尖一致，避免明顯內夾。" },
+  { id: "f16", courseId: "c-fitness", front: "運動後恢復的三個重點？", back: "睡眠、補充水分與均衡營養。" },
+  { id: "f17", courseId: "c-lifestyle", front: "整理空間的第一步？", back: "先依使用頻率分類與減量，再安排固定位置。" },
+  { id: "f18", courseId: "c-lifestyle", front: "協調配色的簡單原則？", back: "先選主色與輔色，再加入少量點綴色。" },
+  { id: "f19", courseId: "c-arts", front: "欣賞視覺作品可以先觀察什麼？", back: "構圖、色彩、材質，以及作品帶來的感受。" },
+  { id: "f20", courseId: "c-arts", front: "策展論述的用途？", back: "提供展覽脈絡，幫助理解作品與主題的關係。" },
 ];
 
 type QuizSeed = Omit<Quiz, "id" | "courseId" | "category">;

@@ -1,6 +1,6 @@
 "use client";
 
-import { Play, Clock, RotateCcw, CheckCircle2 } from "lucide-react";
+import { Play, Clock, RotateCcw, CheckCircle2, BookOpen } from "lucide-react";
 import type { Building, Course } from "@/types";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -25,7 +25,7 @@ export function CourseCard({
         <div className="flex items-start justify-between gap-2">
           <div className="min-w-0">
             <div className="flex items-center gap-1.5">
-              <span>{building?.emoji ?? "📘"}</span>
+              <BookOpen className="h-4 w-4 shrink-0 text-indigo-500" />
               <h3 className="truncate font-semibold">{course.title}</h3>
             </div>
             <p className="mt-0.5 text-xs text-muted-foreground">

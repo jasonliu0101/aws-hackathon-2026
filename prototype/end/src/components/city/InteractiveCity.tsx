@@ -51,7 +51,7 @@ export function InteractiveCity({
     <div className="relative mx-auto w-full max-w-[900px] overflow-hidden rounded-[30px] shadow-[0_24px_60px_-28px_rgba(14,116,144,.58)]">
       {/* 底圖：原始比例顯示，不使用 object-cover 以免座標漂移 */}
       <Image
-        src={asset("/assets/learning-city-map.webp")}
+        src={asset("/assets/learning-city-map.png")}
         alt="學習城市地圖"
         width={1448}
         height={1086}
@@ -90,7 +90,7 @@ export function InteractiveCity({
               style={{ bottom: `calc(100% + ${8 + (pos.labelOffset ?? 0)}px)` }}
             >
               {building.name}
-              {building.level > 1 ? (
+              {building.unlocked ? (
                 <span className="rounded-md bg-sky-100 px-1.5 py-0.5 text-[9px] font-extrabold text-sky-700">
                   Lv.{building.level}
                 </span>

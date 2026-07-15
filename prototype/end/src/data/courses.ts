@@ -100,6 +100,18 @@ export const seedCourses: Course[] = [
     status: "in-progress",
   },
   {
+    id: "c-dental",
+    title: "科學潔牙：貝氏刷牙法",
+    instructor: "健康生活研究室",
+    category: "fitness",
+    progress: 54,
+    lastWatchedAt: "2026-07-15",
+    minutesLeft: 9,
+    status: "in-progress",
+    resumePoint: "正確刷牙角度 04:47",
+    playbackStalls: 0,
+  },
+  {
     id: "c-lifestyle",
     title: "打造有質感的生活空間",
     instructor: "Mia Wu",

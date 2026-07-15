@@ -1,4 +1,4 @@
-import type { AppState, User } from "@/types";
+import type { AppState, LearningNote, User } from "@/types";
 import { seedBuildings } from "./buildings";
 import { seedCourses } from "./courses";
 import { seedFlashcards, seedQuizzes } from "./review";
@@ -29,9 +29,10 @@ export function createInitialState(): AppState {
     flashcards: seedFlashcards,
     quizzes: seedQuizzes,
     answeredQuizIds: [] as string[],
+    claimedRewardIds: [] as string[],
     tasks: seedTasks,
     activity: seedActivity,
-    notes: [] as string[],
+    notes: [] as LearningNote[],
   });
 
   // Generate personalized daily tasks based on user profile
