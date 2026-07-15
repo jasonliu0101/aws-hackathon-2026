@@ -7,11 +7,9 @@
 <!-- 主題無閃爍：paint 前就把 data-theme 定好。
      三個 app（front/mid/end）共用 key「ppa-theme」，載入優先序 ?theme= > localStorage > 預設 dark。 -->
 <script>(function(){try{
-  var u=new URLSearchParams(location.search).get("theme");
-  var t=(u==="dark"||u==="light")?u:localStorage.getItem("ppa-theme");
-  document.documentElement.setAttribute("data-theme",(t==="light")?"light":"dark");
-  if(t==="light"||t==="dark")localStorage.setItem("ppa-theme",t);
-}catch(e){document.documentElement.setAttribute("data-theme","dark");}})();</script>
+  document.documentElement.setAttribute("data-theme","light");
+  localStorage.setItem("ppa-theme","light");
+}catch(e){document.documentElement.setAttribute("data-theme","light");}})();</script>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -200,7 +198,7 @@
         <span class="spacer"></span>
         <button class="act">↗ 分享</button>
         <button class="act">Aa 字級</button>
-        <button class="act" id="themeBtn" title="切換淺色／深色（三個頁面聯動）"><span id="themeIco">☀</span> <span id="themeLbl">淺色</span></button>
+        <!-- 主題固定亮色，已移除切換鈕 -->
       </div>
 
       <div class="ai-bar">

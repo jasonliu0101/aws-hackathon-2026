@@ -39,7 +39,7 @@ http.createServer((req, res) => {
 
   // 動線起點：根路徑導向課前測驗
   if (rel === '/' || rel === '') {
-    res.writeHead(302, { Location: '/front/' });
+    res.writeHead(302, { Location: '/landing/' });
     res.end();
     return;
   }

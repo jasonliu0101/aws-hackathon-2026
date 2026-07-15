@@ -5,11 +5,7 @@
 <script>/* 主題：三個 app（front/mid/end）共用 localStorage key「ppa-theme」，
    任何一端切換都會聯動。載入優先序：網址 ?theme= > localStorage > 預設 light。
    （網址參數負責「跨 origin 帶著走」，localStorage 負責「同 origin 記住」。）*/
-(function(){try{
-  var u=new URLSearchParams(location.search).get("theme");
-  var t=(u==="dark"||u==="light")?u:localStorage.getItem("ppa-theme");
-  if(t==="dark"||t==="light"){document.documentElement.setAttribute("data-theme",t);localStorage.setItem("ppa-theme",t);}
-}catch(e){}})();</script>
+(function(){try{document.documentElement.setAttribute("data-theme","light");localStorage.setItem("ppa-theme","light");}catch(e){}})();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>課前學習人格測驗</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -332,18 +328,12 @@
   html[data-theme="dark"] .theme-toggle .sun{ display:none; }
   html[data-theme="dark"] .theme-toggle .moon{ display:block; }
   @media (max-width:400px){ .theme-toggle{ width:42px; height:42px; top:12px; right:12px; } }
+
+.site-logo{position:fixed;top:14px;left:18px;z-index:100;display:block}.site-logo img{height:30px;width:auto;display:block}
 </style>
 </head>
 <body>
-  <button id="themeToggle" class="theme-toggle" type="button" onclick="toggleTheme()" aria-label="切換深色或淺色模式" title="切換深色／淺色模式">
-    <svg class="ico sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <circle cx="12" cy="12" r="4.2"></circle>
-      <path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"></path>
-    </svg>
-    <svg class="ico moon" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true">
-      <path d="M20.5 14.2A8.2 8.2 0 0 1 9.8 3.5a8.3 8.3 0 1 0 10.7 10.7z"></path>
-    </svg>
-  </button>
+  <a class="site-logo" href="#" aria-label="PressPlay Academy"><img src="pressplay_logo.jpg" alt="PressPlay Academy" /></a>
 <div class="app">
 
   <!-- ===== 首頁 ===== -->

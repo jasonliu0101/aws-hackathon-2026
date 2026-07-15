@@ -17,12 +17,11 @@ export const viewport: Viewport = {
 
 // paint 前就把主題定好，避免深色閃一下白。
 // 三個 app（front/mid/end）共用 localStorage key「ppa-theme」，載入優先序 ?theme= > localStorage > 預設 light。
+// 全站固定亮色（landing 以外統一 bright mode）
 const themeBoot = `(function(){try{
-  var u=new URLSearchParams(location.search).get('theme');
-  var t=(u==='dark'||u==='light')?u:localStorage.getItem('ppa-theme');
-  if(t==='dark'){document.documentElement.classList.add('dark');}
-  document.documentElement.setAttribute('data-theme',t==='dark'?'dark':'light');
-  if(t==='light'||t==='dark')localStorage.setItem('ppa-theme',t);
+  document.documentElement.classList.remove('dark');
+  document.documentElement.setAttribute('data-theme','light');
+  localStorage.setItem('ppa-theme','light');
 }catch(e){}})();`;
 
 export default function RootLayout({

@@ -98,14 +98,8 @@ function toast(html, { em = '✦', ai = false, ms = 3400 } = {}) {
 const curTheme = () =>
   document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
 
-function applyTheme(t, fromSync) {
+function applyTheme(t) {
   document.documentElement.setAttribute('data-theme', t);
-  $('#themeIco').textContent = t === 'light' ? '🌙' : '☀';
-  $('#themeLbl').textContent = t === 'light' ? '深色' : '淺色';
-  if (!fromSync) {
-    try { localStorage.setItem('ppa-theme', t); } catch {}
-    try { const u = new URL(location.href); u.searchParams.set('theme', t); history.replaceState(null, '', u); } catch {}
-  }
   buildHeat();  // 熱力圖的柱子顏色是 JS 算的，換主題要重畫
   syncLinks();
 }
@@ -125,13 +119,7 @@ function syncLinks() {
 }
 
 function wireTheme() {
-  $('#themeBtn').onclick = () => applyTheme(curTheme() === 'light' ? 'dark' : 'light');
-  applyTheme(curTheme(), true);   // 同步 icon/字/連結到 <head> 已定好的主題
-  window.addEventListener('storage', e => {
-    if (e.key === 'ppa-theme' && (e.newValue === 'light' || e.newValue === 'dark')) {
-      applyTheme(e.newValue, true);
-    }
-  });
+  applyTheme('light');   // 全站固定亮色（已移除切換鈕）
 }
 
 /* ═════════════════════════════ 1 · 重播熱力圖 ═════════════════════════════
