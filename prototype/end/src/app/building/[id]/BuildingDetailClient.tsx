@@ -40,10 +40,10 @@ const BUILDING_COPY: Record<CategoryId, { tagline: string; description: string; 
 };
 
 const TOOL_CARDS = [
-  { tool: "quiz" as const, img: "/assets/icons/task-list.png", title: "測驗", description: "檢查理解程度，\n鞏固學習成果", action: "開始測驗" },
-  { tool: "flashcards" as const, img: "/assets/icons/flashcard.png", title: "學習卡", description: "複習重點概念，\n強化記憶", action: "開始複習" },
-  { tool: "notes" as const, img: "/assets/icons/notebook.png", title: "筆記", description: "整理學習重點，\n建立知識架構", action: "查看筆記" },
-  { tool: "highlights" as const, img: "/assets/icons/video-play.png", title: "課程精華", description: "快速複習重點，\n節省學習時間", action: "查看精華" },
+  { tool: "quiz" as const, img: "/assets/icons/task-list.webp", title: "測驗", description: "檢查理解程度，\n鞏固學習成果", action: "開始測驗" },
+  { tool: "flashcards" as const, img: "/assets/icons/flashcard.webp", title: "學習卡", description: "複習重點概念，\n強化記憶", action: "開始複習" },
+  { tool: "notes" as const, img: "/assets/icons/notebook.webp", title: "筆記", description: "整理學習重點，\n建立知識架構", action: "查看筆記" },
+  { tool: "highlights" as const, img: "/assets/icons/video-play.webp", title: "課程精華", description: "快速複習重點，\n節省學習時間", action: "查看精華" },
 ];
 
 export function BuildingDetailClient() {
@@ -105,9 +105,9 @@ export function BuildingDetailClient() {
           <div className="h-full rounded-[22px] border border-white/80 bg-white/90 p-5 shadow-sm">
             <div className="grid gap-3 sm:grid-cols-3">
               {[
-                { img: "/assets/icons/clock.png", label: "學習時間", value: formatMinutes(building.minutes), sub: "累積學習時間" },
-                { img: "/assets/badges/course-complete.png", label: "完成章節", value: `${completedChapters} / ${chapterGoal}`, sub: "已完成章節" },
-                { img: "/assets/badges/level-badge.png", label: "目前等級", value: `Lv.${building.level}`, sub: building.level >= 4 ? "進階學習者" : "持續成長中" },
+                { img: "/assets/icons/clock.webp", label: "學習時間", value: formatMinutes(building.minutes), sub: "累積學習時間" },
+                { img: "/assets/badges/course-complete.webp", label: "完成章節", value: `${completedChapters} / ${chapterGoal}`, sub: "已完成章節" },
+                { img: "/assets/badges/level-badge.webp", label: "目前等級", value: `Lv.${building.level}`, sub: building.level >= 4 ? "進階學習者" : "持續成長中" },
               ].map(({ img, label, value, sub }) => <div key={label} className="rounded-2xl border border-slate-100 bg-white p-4 shadow-sm"><div className="relative mb-3 h-12 w-12"><Image src={asset(img)} alt={label} fill sizes="48px" className="object-contain" /></div><div className="text-xs font-bold text-slate-500">{label}</div><div className="mt-1 text-lg font-black">{value}</div><div className="mt-1 text-[11px] text-slate-400">{sub}</div></div>)}
             </div>
             <div className="mt-5 rounded-2xl border border-slate-100 p-5">
@@ -152,7 +152,7 @@ export function BuildingDetailClient() {
                   <p>想再深化哪個主題，AI 助教都能幫你安排下一步！</p>
                 </div>
               </div>
-              <div className="pointer-events-none absolute bottom-3 right-3 h-20 w-20"><Image src={asset("/assets/icons/ai-robot.png")} alt="AI 助教" fill sizes="80px" className="object-contain drop-shadow-lg" /></div>
+              <div className="pointer-events-none absolute bottom-3 right-3 h-20 w-20"><Image src={asset("/assets/icons/ai-robot.webp")} alt="AI 助教" fill sizes="80px" className="object-contain drop-shadow-lg" /></div>
             </div>
           </aside>
         </section>

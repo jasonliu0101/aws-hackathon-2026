@@ -928,6 +928,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 
 .t-md{font-size:15px;line-height:1.75;color:#dcdce4}
 .t-md strong{color:#fff}
+:root[data-theme="light"] .t-md strong{ color:#4a1fb0; }
 .t-list{list-style:none;display:flex;flex-direction:column;gap:9px;padding-left:2px}
 .t-list li{
   font-size:14px;line-height:1.65;color:#c9c9d3;

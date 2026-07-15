@@ -37,15 +37,15 @@ const NOTIFICATION_UI: Record<string, {
   tone: "indigo" | "amber" | "sky" | "violet" | "emerald";
   time: string;
 }> = {
-  n1: { title: "你的城市昨天又長高了一點！", category: "task", img: "/assets/badges/level-badge.png", tone: "indigo", time: "約 5 分鐘前" },
-  n2: { title: "還記得昨天的「ETF 風險分散」嗎？", category: "task", img: "/assets/icons/video-play.png", tone: "sky", time: "約 2 小時前" },
-  n3: { title: "AI 助教幫你整理好了！", category: "review", img: "/assets/icons/notebook.png", tone: "sky", time: "約 1 天前" },
-  n4: { title: "上次學到哪裡，AI 助教還記得。", category: "review", img: "/assets/icons/video-play.png", tone: "violet", time: "3 天前" },
-  n5: { title: "先不用急著繼續上課", category: "task", img: "/assets/icons/task-list.png", tone: "amber", time: "5 天前" },
-  n6: { title: "「資產配置」好像還有一點模糊？", category: "review", img: "/assets/icons/flashcard.png", tone: "emerald", time: "7 天前" },
-  n7: { title: "好久不見！你的城市一直都在", category: "system", img: "/assets/icons/ai-robot.png", tone: "violet", time: "10 天前" },
-  n8: { title: "你已經在學習城市累積 1,280 分鐘了！", category: "task", img: "/assets/icons/clock.png", tone: "amber", time: "14 天前" },
-  n9: { title: "原本的課程不適合現在的你，也沒關係", category: "system", img: "/assets/icons/ai-robot.png", tone: "indigo", time: "超過 2 週前" },
+  n1: { title: "你的城市昨天又長高了一點！", category: "task", img: "/assets/badges/level-badge.webp", tone: "indigo", time: "約 5 分鐘前" },
+  n2: { title: "還記得昨天的「ETF 風險分散」嗎？", category: "task", img: "/assets/icons/video-play.webp", tone: "sky", time: "約 2 小時前" },
+  n3: { title: "AI 助教幫你整理好了！", category: "review", img: "/assets/icons/notebook.webp", tone: "sky", time: "約 1 天前" },
+  n4: { title: "上次學到哪裡，AI 助教還記得。", category: "review", img: "/assets/icons/video-play.webp", tone: "violet", time: "3 天前" },
+  n5: { title: "先不用急著繼續上課", category: "task", img: "/assets/icons/task-list.webp", tone: "amber", time: "5 天前" },
+  n6: { title: "「資產配置」好像還有一點模糊？", category: "review", img: "/assets/icons/flashcard.webp", tone: "emerald", time: "7 天前" },
+  n7: { title: "好久不見！你的城市一直都在", category: "system", img: "/assets/icons/ai-robot.webp", tone: "violet", time: "10 天前" },
+  n8: { title: "你已經在學習城市累積 1,280 分鐘了！", category: "task", img: "/assets/icons/clock.webp", tone: "amber", time: "14 天前" },
+  n9: { title: "原本的課程不適合現在的你，也沒關係", category: "system", img: "/assets/icons/ai-robot.webp", tone: "indigo", time: "超過 2 週前" },
 };
 
 const FILTERS: Array<{ id: FilterId; label: string }> = [
@@ -98,7 +98,7 @@ export default function NotificationsPage() {
         <aside className="space-y-4">
           <section className="relative min-h-[210px] overflow-hidden rounded-[24px] border border-indigo-100 bg-gradient-to-br from-indigo-50 via-white to-blue-100 p-6 shadow-sm">
             <div className="relative z-10 max-w-[200px]"><p className="text-xl font-black">小學伴</p><p className="mt-2 text-base font-semibold leading-7 text-slate-600">你有 {counts.all} 個新的學習提醒，挑一件最適合現在的開始吧！</p><button onClick={() => router.push("/tasks")} className="mt-5 flex items-center gap-2 rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 px-4 py-2.5 text-sm font-black text-white shadow-lg shadow-indigo-200">查看今日任務<ArrowRight className="h-4 w-4" /></button></div>
-            <div className="absolute bottom-4 right-4 h-28 w-28"><Image src={asset("/assets/icons/ai-robot.png")} alt="小學伴" fill sizes="112px" className="object-contain drop-shadow-xl" /></div>
+            <div className="absolute bottom-4 right-4 h-28 w-28"><Image src={asset("/assets/icons/ai-robot.webp")} alt="小學伴" fill sizes="112px" className="object-contain drop-shadow-xl" /></div>
           </section>
 
           <section className="rounded-[24px] border border-white/80 bg-white/95 p-5 shadow-sm">

@@ -14,10 +14,10 @@ import { BUILDING_ASSETS } from "@/lib/building-assets";
 import { asset } from "@/lib/asset";
 
 const TOOLS: Array<{ id: ReviewTool; label: string; asset: string }> = [
-  { id: "flashcards", label: "學習卡", asset: "/assets/icons/flashcard.png" },
-  { id: "quiz", label: "問題測驗", asset: "/assets/icons/task-list.png" },
-  { id: "notes", label: "學習筆記", asset: "/assets/icons/notebook.png" },
-  { id: "highlights", label: "課程精華", asset: "/assets/icons/video-play.png" },
+  { id: "flashcards", label: "學習卡", asset: "/assets/icons/flashcard.webp" },
+  { id: "quiz", label: "問題測驗", asset: "/assets/icons/task-list.webp" },
+  { id: "notes", label: "學習筆記", asset: "/assets/icons/notebook.webp" },
+  { id: "highlights", label: "課程精華", asset: "/assets/icons/video-play.webp" },
 ];
 
 function isTool(value: string | null): value is ReviewTool {

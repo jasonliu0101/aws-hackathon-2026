@@ -51,7 +51,7 @@ export function InteractiveCity({
     <div className="relative mx-auto w-full max-w-[900px] overflow-hidden rounded-[30px] shadow-[0_24px_60px_-28px_rgba(14,116,144,.58)]">
       {/* 底圖：原始比例顯示，不使用 object-cover 以免座標漂移 */}
       <Image
-        src={asset("/assets/learning-city-map.png")}
+        src={asset("/assets/learning-city-map.webp")}
         alt="學習城市地圖"
         width={1448}
         height={1086}
