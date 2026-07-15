@@ -1,6 +1,9 @@
 # 絕對不要 commit 這個
 .env
 
+# macOS 系統檔案
+.DS_Store
+
 # 資料快取與產出
 .cache/
 out/*.csv
