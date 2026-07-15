@@ -4,7 +4,8 @@
 >
 > AWS Hackathon 2026 ｜ PressPlay Academy (PPA) 線上學習體驗改造
 
-🔗 **線上 Demo：https://jasonliu0101.github.io/ppa/**
+🔗 **線上 Demo（部署於 AWS）：https://d2ya9sj3npaaes.cloudfront.net** ｜ 架構：S3（私有）+ CloudFront
+🔗 備用鏡像（GitHub Pages）：https://jasonliu0101.github.io/ppa/
 
 ---
 
@@ -101,11 +102,13 @@ flowchart TB
         EN["end<br/>Next.js 14 · TypeScript · Tailwind · shadcn 風格"]
     end
 
-    subgraph DEPLOY["🚀 部署"]
-        GP["GitHub Pages（靜態）<br/>jasonliu0101.github.io/ppa/"]
+    subgraph DEPLOY["🚀 部署（AWS · 已上線）"]
+        CFR["CloudFront<br/>公開 HTTPS"]
+        S3P[("S3 私有<br/>Block Public Access")]
+        CFR -->|OAC| S3P
     end
 
-    subgraph CLOUD["☁️ AWS 落地路徑（下一階段）"]
+    subgraph CLOUD["☁️ 下一階段（AWS）"]
         BR["Amazon Bedrock<br/>Claude — 生成筆記/精華/召回文案"]
         DB[("DynamoDB<br/>跨裝置進度")]
         EB["EventBridge + SES/Pinpoint<br/>召回推播"]
@@ -114,7 +117,7 @@ flowchart TB
     CJ --> MI
     MF -.->|個人化| FR
     CE -.->|推薦下一步| EN
-    FR & MI & EN --> GP
+    FR & MI & EN -->|build + s3 sync| S3P
     MI & EN -.->|替換 Mock| BR
     EN -.-> DB
     EN -.-> EB
@@ -178,9 +181,26 @@ flowchart LR
 
 ---
 
-## ☁️ AWS 落地路徑
+## ☁️ AWS 部署（已上線）
 
-前端已完成，AI 功能全部以 Mock 實作、**回傳結構與正式 API 完全一致**，上線只需替換函式內部：
+整條動線已實際部署在 AWS，符合黑客松「以 AWS 為主、雲原生、非 EC2」與「勿建公開 S3」的要求：
+
+```mermaid
+flowchart LR
+    U(("使用者")) -->|HTTPS| CF["CloudFront<br/>d2ya9sj3npaaes.cloudfront.net<br/>+ URL 重寫 Function"]
+    CF -->|"OAC · 只有 CloudFront 讀得到"| S3[("S3 Bucket 私有<br/>Block Public Access 全開")]
+    S3 --> FILES["landing / front / mid / end<br/>+ 影片與圖片資產"]
+    classDef aws fill:#fff3e0,stroke:#ff9900,color:#7a4f01;
+    class CF,S3,FILES aws;
+```
+
+- **純 Serverless**：只用 S3 + CloudFront，完全不碰 EC2 / RDS / Security Group
+- **S3 不對外公開**：Block Public Access 全開，只有 CloudFront 透過 **OAC（Origin Access Control）** 簽章存取 → 符合「請勿建立公開對外的 S3 Bucket」
+- **CloudFront Function** 在邊緣把 `/front/` 這類目錄請求改寫成 `/front/index.html`
+
+### 下一階段：接上生成式 AI
+
+AI 功能目前以 Mock 實作、**回傳結構與正式 API 完全一致**，上線只需替換函式內部：
 
 | 能力 | AWS 服務 |
 |---|---|
