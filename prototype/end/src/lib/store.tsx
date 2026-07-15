@@ -13,14 +13,15 @@ import type {
   CategoryId,
   Familiarity,
 } from "@/types";
-import { createInitialState, seedBuildings, seedCourses, seedQuizzes } from "@/data";
+import { createInitialState, seedBuildings, seedCourses, seedFlashcards, seedQuizzes } from "@/data";
 import {
   buildingLevelFromMinutes,
   levelFromXp,
   XP_RULES,
 } from "@/lib/xp";
 
-const STORAGE_KEY = "learning-city-state-v1";
+// v3：獎勵數值改版（XP 為 5 的倍數、金幣尾數為 0），換 key 讓舊存檔直接改用新種子。
+const STORAGE_KEY = "learning-city-state-v3";
 
 // ---------------------------------------------------------------------------
 // Actions
@@ -31,7 +32,7 @@ type Action =
   | { type: "ANSWER_QUIZ"; quizId: string; correct: boolean }
   | { type: "WATCH_COURSE"; courseId: string; minutes: number }
   | { type: "ADD_NOTE"; note: string; category: CategoryId }
-  | { type: "COMEBACK_BONUS" }
+  | { type: "COMEBACK_BONUS"; sourceId: string }
   | { type: "HYDRATE"; state: AppState }
   | { type: "RESET" };
 
@@ -39,6 +40,13 @@ type Action =
 function recompute(state: AppState): AppState {
   const existingCourses = new Map((state.courses ?? []).map((course) => [course.id, course]));
   const courses = seedCourses.map((seed) => ({ ...seed, ...(existingCourses.get(seed.id) ?? {}) }));
+  const existingFlashcards = new Map((state.flashcards ?? []).map((card) => [card.id, card]));
+  const flashcards = seedFlashcards.map((seed) => ({ ...seed, ...(existingFlashcards.get(seed.id) ?? {}) }));
+  const notes = (state.notes ?? []).map((note, index) =>
+    typeof note === "string"
+      ? { id: `legacy-note-${index}`, body: note, category: "investing" as CategoryId, createdAt: "2026-07-15" }
+      : note,
+  );
   const buildings = state.buildings.map((b) => {
     const currentMetadata = seedBuildings.find((seed) => seed.id === b.id);
     return {
@@ -47,7 +55,6 @@ function recompute(state: AppState): AppState {
         ? {
             name: currentMetadata.name,
             category: currentMetadata.category,
-            emoji: currentMetadata.emoji,
             color: currentMetadata.color,
           }
         : {}),
@@ -66,7 +73,10 @@ function recompute(state: AppState): AppState {
         ? state.quizzes
         : seedQuizzes,
     answeredQuizIds: state.answeredQuizIds ?? [],
+    claimedRewardIds: state.claimedRewardIds ?? [],
     courses,
+    flashcards,
+    notes,
     buildings,
     user: {
       ...state.user,
@@ -143,7 +153,9 @@ function reducer(state: AppState, action: Action): AppState {
     }
 
     case "RATE_FLASHCARD": {
-      let next = addXp(state, 2);
+      const targetCard = state.flashcards.find((card) => card.id === action.cardId);
+      if (!targetCard) return state;
+      let next = targetCard.familiarity ? state : addXp(state, XP_RULES.flashcardSet);
       next = {
         ...next,
         flashcards: next.flashcards.map((c) =>
@@ -165,7 +177,7 @@ function reducer(state: AppState, action: Action): AppState {
 
     case "ANSWER_QUIZ": {
       if ((state.answeredQuizIds ?? []).includes(action.quizId)) return state;
-      let next = addXp(state, action.correct ? XP_RULES.dailyQuestion : 2);
+      let next = addXp(state, action.correct ? XP_RULES.dailyQuestion : 5);
       const quizzesDone = next.user.quizzesDone + 1;
       // Rolling accuracy estimate for the demo.
       const totalCorrect =
@@ -216,7 +228,18 @@ function reducer(state: AppState, action: Action): AppState {
 
     case "ADD_NOTE": {
       let next = addXp(state, XP_RULES.note);
-      next = { ...next, notes: [action.note, ...next.notes] };
+      next = {
+        ...next,
+        notes: [
+          {
+            id: `note-${Date.now()}`,
+            body: action.note,
+            category: action.category,
+            createdAt: new Date().toISOString().slice(0, 10),
+          },
+          ...next.notes,
+        ],
+      };
       next = logActivity(next, {
         id: `act-${Date.now()}`,
         date: new Date().toISOString().slice(0, 10),
@@ -228,9 +251,10 @@ function reducer(state: AppState, action: Action): AppState {
     }
 
     case "COMEBACK_BONUS": {
+      if ((state.claimedRewardIds ?? []).includes(action.sourceId)) return state;
       const next = addXp(state, XP_RULES.comeback);
       return recompute(
-        logActivity(next, {
+        logActivity({ ...next, claimedRewardIds: [...(next.claimedRewardIds ?? []), action.sourceId] }, {
           id: `act-${Date.now()}`,
           date: new Date().toISOString().slice(0, 10),
           type: "review",

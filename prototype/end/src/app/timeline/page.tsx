@@ -45,7 +45,8 @@ export default function TimelinePage() {
   }, [state.activity]);
 
   return (
-    <div className="mx-auto max-w-2xl space-y-5">
+    <div className="app-page-bg min-h-screen px-3 py-5 sm:px-5 lg:px-7">
+      <div className="mx-auto max-w-2xl space-y-5 rounded-[26px] border border-white/80 bg-white p-5 shadow-sm sm:p-7">
       <div>
         <h1 className="text-2xl font-bold">學習紀錄</h1>
         <p className="mt-1 text-sm text-muted-foreground">
@@ -91,6 +92,7 @@ export default function TimelinePage() {
             </div>
           );
         })}
+      </div>
       </div>
     </div>
   );

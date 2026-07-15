@@ -14,6 +14,7 @@ export const seedNotifications: ReturnNotification[] = [
     body: "再學習 3 分鐘，投資銀行就能獲得 20 XP，離升級更近一步。",
     cta: "繼續建設",
     target: "resume",
+    category: "investing",
   },
   {
     id: "n2",
@@ -22,6 +23,7 @@ export const seedNotifications: ReturnNotification[] = [
     body: "你只剩下 4 分鐘就能完成這一章，AI 助教已經幫你接好進度。",
     cta: "從上次位置繼續",
     target: "resume",
+    category: "investing",
   },
   {
     id: "n3",
@@ -30,6 +32,7 @@ export const seedNotifications: ReturnNotification[] = [
     body: "《小資族 ETF 投資入門》的三個重要觀念，只要 60 秒就能快速想起來。",
     cta: "快速複習",
     target: "highlight",
+    category: "investing",
   },
   // 中期召回｜3～7 天
   {
@@ -39,6 +42,7 @@ export const seedNotifications: ReturnNotification[] = [
     body: "我們把你停下來前的內容整理成一段 90 秒精華，不用重新看完整章節。",
     cta: "播放課程精華",
     target: "highlight",
+    category: "investing",
   },
   {
     id: "n5",
@@ -46,7 +50,8 @@ export const seedNotifications: ReturnNotification[] = [
     timeframe: "5 天前",
     body: "AI 助教從你上次的內容出了一題小測驗，回答完就能找回學習狀態。",
     cta: "回答一題",
-    target: "flashcards",
+    target: "quiz",
+    category: "investing",
   },
   {
     id: "n6",
@@ -55,6 +60,7 @@ export const seedNotifications: ReturnNotification[] = [
     body: "AI 助教依照你上次的答題結果，準備了一個更簡單的例子，花 2 分鐘就能補起來。",
     cta: "看看新解釋",
     target: "highlight",
+    category: "investing",
   },
   // 長期召回｜超過一週
   {
@@ -64,6 +70,7 @@ export const seedNotifications: ReturnNotification[] = [
     body: "累積的學習時間、筆記和建築都完整保存著，今天從一張學習卡重新開始就好。",
     cta: "輕鬆回來看看",
     target: "flashcards",
+    category: "investing",
   },
   {
     id: "n8",

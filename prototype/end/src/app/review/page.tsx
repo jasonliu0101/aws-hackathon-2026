@@ -14,10 +14,10 @@ import { BUILDING_ASSETS } from "@/lib/building-assets";
 import { asset } from "@/lib/asset";
 
 const TOOLS: Array<{ id: ReviewTool; label: string; asset: string }> = [
-  { id: "flashcards", label: "學習卡", asset: "/assets/icons/flashcard.webp" },
-  { id: "quiz", label: "問題測驗", asset: "/assets/icons/task-list.webp" },
-  { id: "notes", label: "學習筆記", asset: "/assets/icons/notebook.webp" },
-  { id: "highlights", label: "課程精華", asset: "/assets/icons/video-play.webp" },
+  { id: "flashcards", label: "學習卡", asset: "/assets/icons/flashcard.png" },
+  { id: "quiz", label: "問題測驗", asset: "/assets/icons/task-list.png" },
+  { id: "notes", label: "學習筆記", asset: "/assets/icons/notebook.png" },
+  { id: "highlights", label: "課程精華", asset: "/assets/icons/video-play.png" },
 ];
 
 function isTool(value: string | null): value is ReviewTool {
@@ -53,6 +53,7 @@ export default function ReviewPage() {
   const card = cards.length ? cards[cardIdx % cards.length] : null;
   const quiz = quizzes.length ? quizzes[quizIdx % quizzes.length] : null;
   const selectedCourse = highlights.length ? highlights[courseIdx % highlights.length] : null;
+  const visibleNotes = state.notes.filter((item) => category === "all" || item.category === category);
   const activeCategory = category === "all" ? state.buildings[0]?.id ?? "investing" : category;
 
   function completeSourceTask() {
@@ -73,7 +74,7 @@ export default function ReviewPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[radial-gradient(circle_at_50%_0%,#dbeafe_0%,#f8fafc_42%)] px-3 py-5 sm:px-5 lg:px-7">
+    <div className="app-page-bg min-h-screen px-3 py-5 sm:px-5 lg:px-7">
       <div className="mx-auto max-w-[1180px] space-y-4">
         <header className="rounded-[24px] border border-white/80 bg-white/95 p-5 shadow-sm sm:p-6"><div className="flex items-center gap-3"><Sparkles className="h-6 w-6 text-indigo-500" /><div><h1 className="text-2xl font-black">複習工具</h1><p className="mt-1 text-sm text-slate-500">所有入口都會回到同一套工具與學習紀錄。</p></div></div><div className="no-scrollbar mt-5 flex gap-2 overflow-x-auto">{TOOLS.map((item) => <button key={item.id} onClick={() => setTool(item.id)} className={`flex min-w-[130px] items-center justify-center gap-2 rounded-xl px-4 py-3 text-xs font-black transition ${tool === item.id ? "bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-lg shadow-indigo-200" : "border border-slate-200 bg-white text-slate-600"}`}><Image src={asset(item.asset)} alt="" width={28} height={28} className="h-7 w-7 object-contain" />{item.label}</button>)}</div></header>
 
@@ -82,7 +83,7 @@ export default function ReviewPage() {
         <main className="rounded-[26px] border border-white/80 bg-white/95 p-5 shadow-sm sm:p-7">
           {tool === "flashcards" && (card ? <div className="mx-auto max-w-2xl"><div className="mb-4 flex justify-between text-xs font-bold text-slate-400"><span>學習卡複習</span><span>{(cardIdx % cards.length) + 1} / {cards.length}</span></div><Flashcard key={card.id} card={card} onRate={rateCard} onExplain={() => setAiHint(`AI 助教：${card.back}。試著先用自己的例子重述一次，再翻回正面確認。`)} />{aiHint && <div className="mt-3 rounded-2xl border border-indigo-100 bg-indigo-50 p-4 text-sm leading-6 text-indigo-800">{aiHint}</div>}</div> : <EmptyState label="這個領域目前沒有學習卡" />)}
           {tool === "quiz" && (quiz ? <div className="mx-auto max-w-2xl"><div className="mb-4 flex justify-between text-xs font-bold text-slate-400"><span>知識小測驗</span><span>{(quizIdx % quizzes.length) + 1} / {quizzes.length}</span></div><QuizCard key={quiz.id} quiz={quiz} onAnswered={(correct) => { dispatch({ type: "ANSWER_QUIZ", quizId: quiz.id, correct }); completeSourceTask(); }} /><button onClick={() => setQuizIdx((index) => index + 1)} className="mt-4 w-full rounded-xl bg-indigo-50 py-3 text-sm font-black text-indigo-600">下一題</button></div> : <EmptyState label="這個領域目前沒有測驗" />)}
-          {tool === "notes" && <div className="mx-auto max-w-2xl"><div className="mb-4 flex items-center gap-2"><FileText className="h-5 w-5 text-amber-500" /><h2 className="font-black">新增學習筆記</h2></div><textarea value={note} onChange={(event) => setNote(event.target.value)} placeholder="用自己的話寫下今天最重要的觀念…" className="min-h-52 w-full rounded-2xl border border-slate-200 bg-slate-50 p-4 text-sm outline-none transition focus:border-indigo-400 focus:bg-white" /><button disabled={!note.trim()} onClick={() => { dispatch({ type: "ADD_NOTE", note: note.trim(), category: activeCategory }); setNote(""); completeSourceTask(); }} className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 py-3 text-sm font-black text-white disabled:opacity-40"><Save className="h-4 w-4" />儲存筆記</button><div className="mt-6 space-y-2">{state.notes.slice(0, 5).map((item, index) => <div key={`${item}-${index}`} className="rounded-xl bg-slate-50 p-3 text-sm text-slate-600">{item}</div>)}</div></div>}
+          {tool === "notes" && <div className="mx-auto max-w-2xl"><div className="mb-4 flex items-center gap-2"><FileText className="h-5 w-5 text-amber-500" /><h2 className="font-black">新增學習筆記</h2></div><textarea value={note} onChange={(event) => setNote(event.target.value)} placeholder="用自己的話寫下今天最重要的觀念…" className="min-h-52 w-full rounded-2xl border border-slate-200 bg-slate-50 p-4 text-sm outline-none transition focus:border-indigo-400 focus:bg-white" /><button disabled={!note.trim()} onClick={() => { dispatch({ type: "ADD_NOTE", note: note.trim(), category: activeCategory }); setNote(""); completeSourceTask(); }} className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 py-3 text-sm font-black text-white disabled:opacity-40"><Save className="h-4 w-4" />儲存筆記</button><div className="mt-6 space-y-2">{visibleNotes.slice(0, 5).map((item) => <div key={item.id} className="rounded-xl bg-slate-50 p-3"><p className="text-sm text-slate-600">{item.body}</p><p className="mt-2 text-[10px] font-bold text-slate-400">{state.buildings.find((building) => building.id === item.category)?.name}・{item.createdAt}</p></div>)}</div></div>}
           {tool === "highlights" && (selectedCourse ? <div className="mx-auto max-w-3xl"><CourseHighlight course={selectedCourse} /><div className="mt-4 flex gap-2"><button onClick={() => setCourseIdx((index) => index + 1)} className="flex-1 rounded-xl border border-indigo-200 py-3 text-sm font-black text-indigo-600">下一個精華</button>{sourceTaskId && <button onClick={completeSourceTask} className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-indigo-600 py-3 text-sm font-black text-white"><CheckCircle2 className="h-4 w-4" />完成本次回顧</button>}</div></div> : <EmptyState label="這個領域目前沒有課程精華" />)}
         </main>
       </div>

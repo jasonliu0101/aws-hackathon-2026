@@ -23,7 +23,6 @@ export interface Building {
   name: string;
   /** Human-readable category label, e.g. 投資理財 */
   category: string;
-  emoji: string;
   /** Tailwind-friendly accent color (hex) used by the tile renderer. */
   color: string;
   /** Whether the user has ever watched a course in this category. */
@@ -97,6 +96,13 @@ export interface ActivityEntry {
   category?: CategoryId;
 }
 
+export interface LearningNote {
+  id: string;
+  body: string;
+  category: CategoryId;
+  createdAt: string;
+}
+
 export type TaskKind = "review" | "watch" | "quiz" | "note";
 
 export interface DailyTask {
@@ -127,7 +133,9 @@ export interface ReturnNotification {
   body: string;
   cta: string;
   /** Where the CTA deep-links to. */
-  target: "resume" | "flashcards" | "highlight" | "task";
+  target: "resume" | "flashcards" | "quiz" | "notes" | "highlight" | "task";
+  /** Optional learning domain used by review/course deep-links. */
+  category?: CategoryId;
 }
 
 /** Persisted, mutable user progress. Everything here is saved to localStorage. */
@@ -154,7 +162,9 @@ export interface AppState {
   quizzes: Quiz[];
   /** Prevents repeated XP rewards for answering the same question. */
   answeredQuizIds: string[];
+  /** One-time reward claims such as notification comeback bonuses. */
+  claimedRewardIds: string[];
   tasks: DailyTask[];
   activity: ActivityEntry[];
-  notes: string[];
+  notes: LearningNote[];
 }

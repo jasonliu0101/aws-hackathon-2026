@@ -34,10 +34,7 @@
     border-color: hsl(var(--border));
   }
   body {
-    background:
-      radial-gradient(circle at 20% 0%, rgba(199, 210, 254, .55), transparent 35%),
-      radial-gradient(circle at 90% 20%, rgba(186, 230, 253, .45), transparent 30%),
-      hsl(var(--background));
+    background: #05070b;
     color: hsl(var(--foreground));
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
@@ -47,6 +44,10 @@
 .site-stage {
   min-height: 100dvh;
   padding: 0;
+  background:
+    radial-gradient(circle at 15% 0%, rgba(79, 70, 229, .18), transparent 30%),
+    radial-gradient(circle at 88% 18%, rgba(124, 58, 237, .12), transparent 28%),
+    #05070b;
 }
 
 .site-shell {
@@ -76,6 +77,13 @@
     linear-gradient(135deg, #f8fbff, #eef6ff);
 }
 
+.app-page-bg {
+  background:
+    radial-gradient(circle at 12% 0%, rgba(219, 234, 254, .95), transparent 34%),
+    radial-gradient(circle at 90% 14%, rgba(237, 233, 254, .62), transparent 30%),
+    linear-gradient(145deg, #f8fafc, #f1f5f9 58%, #f8fafc);
+}
+
 /* Subtle isometric ground for the city scene */
 .city-ground {
   background-image:
@@ -97,181 +105,3 @@
 .site-shell:has(.building-detail-page) > header {
   display: none;
 }
-
-/* ═══════════════════════════════════════════════════════════════════
-   深色主題
-   ─────────────────────────────────────────────────────────────────
-   這個 app 原本沒有 dark: 變體。與其在幾十個元件裡逐一加 dark:，
-   不如在這裡集中重映射它「實際用到的」那組 Tailwind utility。
-   這些規則沒有包在 @layer 裡，所以優先序高於 Tailwind 的 utilities layer，
-   .dark 前綴又比單一 class 更高特異度 —— 穩穩蓋過去，不必動元件。
-   （tailwind.config 的 darkMode 已是 ["class"]，靠 <html class="dark"> 觸發。）
-   ═══════════════════════════════════════════════════════════════════ */
-.dark { color-scheme: dark; }
-
-/* shadcn 風格元件（Card / Button / Tabs / Badge…）走這組 HSL 變數，
-   例如課程卡是 bg-card=--card。只補 utility class 蓋不到它們，要把變數本身翻深。 */
-.dark {
-  --background: 230 16% 7%;
-  --foreground: 220 14% 90%;
-  --card: 230 12% 11%;
-  --card-foreground: 220 14% 90%;
-  --primary: 243 80% 70%;
-  --primary-foreground: 0 0% 100%;
-  --secondary: 152 40% 52%;
-  --secondary-foreground: 0 0% 100%;
-  --muted: 230 10% 18%;
-  --muted-foreground: 220 8% 60%;
-  --accent: 40 60% 58%;
-  --accent-foreground: 40 40% 92%;
-  --border: 230 10% 21%;
-  --input: 230 10% 21%;
-  --ring: 243 80% 70%;
-}
-
-/* 頁面與外殼 */
-.dark body{
-  background:
-    radial-gradient(circle at 20% 0%, rgba(99,102,241,.16), transparent 34%),
-    radial-gradient(circle at 90% 16%, rgba(56,189,248,.12), transparent 30%),
-    #0e0e12;
-  color:#e8e8ea;
-}
-.dark .site-shell{ background:#121217; }
-@media (min-width:768px){ .dark .site-shell{ border-color:#26262f; box-shadow:0 28px 80px -34px rgba(0,0,0,.7); } }
-.dark .homepage-hero{
-  background:
-    radial-gradient(circle at 18% 10%, rgba(99,102,241,.18), transparent 34%),
-    radial-gradient(circle at 86% 10%, rgba(56,189,248,.12), transparent 30%),
-    linear-gradient(135deg,#16161d,#12121a);
-}
-.dark .city-ground{
-  background-image:
-    linear-gradient(hsl(220 20% 70% / .1) 1px, transparent 1px),
-    linear-gradient(90deg, hsl(220 20% 70% / .1) 1px, transparent 1px);
-}
-
-/* 白底 → 深色卡面（含半透明導覽列） */
-.dark .bg-white{ background-color:#17171d; }
-.dark .bg-white\/95{ background-color:rgba(23,23,29,.95); }
-.dark .bg-white\/90{ background-color:rgba(23,23,29,.9); }
-.dark .bg-white\/85{ background-color:rgba(23,23,29,.85); }
-.dark .bg-white\/80{ background-color:rgba(23,23,29,.8); }
-.dark .bg-white\/70{ background-color:rgba(23,23,29,.7); }
-
-/* slate 灰階：面 */
-.dark .bg-slate-50{ background-color:#1b1b22; }
-.dark .bg-slate-50\/60{ background-color:rgba(27,27,34,.6); }
-.dark .bg-slate-100{ background-color:#23232b; }
-.dark .bg-slate-100\/70{ background-color:rgba(35,35,43,.7); }
-.dark .bg-slate-200{ background-color:#2b2b34; }
-.dark .bg-slate-200\/70{ background-color:rgba(43,43,52,.7); }
-.dark .bg-slate-300{ background-color:#34343f; }
-.dark .bg-slate-900{ background-color:#2b2b35; }
-/* slate 灰階：字 */
-.dark .text-slate-900{ color:#ecedef; }
-.dark .text-slate-700{ color:#ced0d6; }
-.dark .text-slate-600{ color:#b3b5bd; }
-.dark .text-slate-500{ color:#909299; }
-.dark .text-slate-400{ color:#74757e; }
-.dark .text-slate-300{ color:#5c5d66; }
-/* slate 灰階：邊框 */
-.dark .border-slate-100{ border-color:#26262f; }
-.dark .border-slate-200{ border-color:#2f2f39; }
-.dark .border-slate-300{ border-color:#3a3a45; }
-
-/* indigo / violet 主色系 */
-.dark .bg-indigo-50{ background-color:rgba(99,102,241,.14); }
-.dark .bg-indigo-100{ background-color:rgba(99,102,241,.22); }
-.dark .border-indigo-100{ border-color:rgba(99,102,241,.24); }
-.dark .border-indigo-200{ border-color:rgba(99,102,241,.32); }
-.dark .text-indigo-600{ color:#a5b4fc; }
-.dark .text-indigo-500{ color:#a5b4fc; }
-.dark .text-violet-600{ color:#c4b5fd; }
-.dark .bg-violet-50{ background-color:rgba(139,92,246,.14); }
-.dark .bg-violet-100{ background-color:rgba(139,92,246,.22); }
-
-/* sky */
-.dark .bg-sky-50{ background-color:rgba(56,189,248,.13); }
-.dark .bg-sky-50\/80{ background-color:rgba(56,189,248,.13); }
-.dark .bg-sky-100{ background-color:rgba(56,189,248,.2); }
-.dark .border-sky-100{ border-color:rgba(56,189,248,.24); }
-.dark .text-sky-600{ color:#7dd3fc; }
-
-/* amber */
-.dark .bg-amber-50{ background-color:rgba(245,158,11,.14); }
-.dark .bg-amber-100{ background-color:rgba(245,158,11,.22); }
-.dark .border-amber-200{ border-color:rgba(245,158,11,.3); }
-.dark .text-amber-500{ color:#fbbf24; }
-.dark .text-amber-600{ color:#f59e0b; }
-.dark .text-amber-700{ color:#e0a52a; }
-
-/* emerald */
-.dark .bg-emerald-50{ background-color:rgba(16,185,129,.14); }
-.dark .bg-emerald-100{ background-color:rgba(16,185,129,.22); }
-.dark .border-emerald-100{ border-color:rgba(16,185,129,.24); }
-.dark .text-emerald-600{ color:#6ee7b7; }
-
-/* rose */
-.dark .bg-rose-50{ background-color:rgba(244,63,94,.14); }
-.dark .text-rose-600{ color:#fb7185; }
-
-/* blue（多半只當漸層停點，但也有實心用法）*/
-.dark .bg-blue-50{ background-color:rgba(59,130,246,.14); }
-.dark .bg-blue-100{ background-color:rgba(59,130,246,.2); }
-.dark .border-blue-100{ border-color:rgba(59,130,246,.24); }
-.dark .text-blue-600{ color:#93c5fd; }
-
-/* 半透明白邊框（卡片外框）*/
-.dark .border-white\/80{ border-color:rgba(255,255,255,.08); }
-.dark .border-white\/70{ border-color:rgba(255,255,255,.07); }
-.dark .border-white\/60{ border-color:rgba(255,255,255,.06); }
-.dark .bg-white\/60{ background-color:rgba(23,23,29,.6); }
-.dark .bg-white\/50{ background-color:rgba(23,23,29,.5); }
-
-/* 白字保持白（在漸層/彩色按鈕上），故意不重映射 .text-white */
-
-/* ── 深色補漏：漸層 hero 與 radial 頁底 ──
-   有些卡片/頁底不是用 bg-* 上色，而是 Tailwind 漸層停點（from/via/to-*）或
-   arbitrary 的 radial-gradient。單獨蓋 bg-* 蓋不到它們，所以在這裡處理。 */
-
-/* 頁底的淺色 radial gradient（多頁共用 bg-[radial-gradient(...#dbeafe...)]）→ 讓深色外殼透出來 */
-.dark [class*="radial-gradient"]{ background-image:none !important; background-color:transparent; }
-
-/* 漸層停點：白 / 淺色停點在深色下換成深色，整張 hero 自然變深。
-   （鮮色按鈕漸層 from-indigo-600 / to-violet-600 / from-blue-500… 不在此列，維持鮮豔）*/
-.dark .from-white{ --tw-gradient-from:#191922 var(--tw-gradient-from-position); --tw-gradient-to:rgb(25 25 34/0) var(--tw-gradient-to-position); }
-.dark .from-indigo-50,.dark .from-blue-50,.dark .from-sky-50,.dark .from-sky-100{ --tw-gradient-from:#191922 var(--tw-gradient-from-position); --tw-gradient-to:rgb(25 25 34/0) var(--tw-gradient-to-position); }
-.dark .to-white,.dark .to-blue-100,.dark .to-indigo-50,.dark .to-indigo-100,.dark .to-violet-50,.dark .to-emerald-50{ --tw-gradient-to:#191922 var(--tw-gradient-to-position); }
-.dark .via-white{ --tw-gradient-to:rgb(25 25 34/0) var(--tw-gradient-to-position); --tw-gradient-stops:var(--tw-gradient-from),#191922 var(--tw-gradient-via-position),var(--tw-gradient-to); }
-.dark .via-indigo-50,.dark .via-blue-50{ --tw-gradient-to:rgb(25 25 34/0) var(--tw-gradient-to-position); --tw-gradient-stops:var(--tw-gradient-from),#191922 var(--tw-gradient-via-position),var(--tw-gradient-to); }
-
-/* 通知卡「未讀」是 from-<色>-50/80 到 to-white 的淡色洗 → 深色下保留一點色調 */
-.dark .from-indigo-50\/80{ --tw-gradient-from:rgba(99,102,241,.13) var(--tw-gradient-from-position); --tw-gradient-to:rgba(99,102,241,0) var(--tw-gradient-to-position); }
-.dark .from-amber-50\/80{ --tw-gradient-from:rgba(245,158,11,.12) var(--tw-gradient-from-position); --tw-gradient-to:rgba(245,158,11,0) var(--tw-gradient-to-position); }
-.dark .from-sky-50\/80{ --tw-gradient-from:rgba(56,189,248,.12) var(--tw-gradient-from-position); --tw-gradient-to:rgba(56,189,248,0) var(--tw-gradient-to-position); }
-.dark .from-violet-50\/80{ --tw-gradient-from:rgba(139,92,246,.13) var(--tw-gradient-from-position); --tw-gradient-to:rgba(139,92,246,0) var(--tw-gradient-to-position); }
-.dark .from-emerald-50\/80{ --tw-gradient-from:rgba(16,185,129,.12) var(--tw-gradient-from-position); --tw-gradient-to:rgba(16,185,129,0) var(--tw-gradient-to-position); }
-
-/* 通知卡「已讀」bg-slate-100/70、以及進度條 bg-white */
-.dark .bg-slate-100\/70{ background-color:rgba(35,35,43,.7); }
-.dark .bg-slate-900\/70{ background-color:rgba(0,0,0,.55); }
-.dark .bg-slate-900\/40{ background-color:rgba(0,0,0,.35); }
-
-/* ── 深色補漏：700/800/950 的深字色（本來配淺底，深底上要變亮）+ 剩下的實心底 ── */
-.dark .text-amber-700,.dark .text-yellow-700,.dark .text-amber-800{ color:#f0b445; }
-.dark .text-emerald-700{ color:#6ee7b7; }
-.dark .text-sky-700{ color:#7dd3fc; }
-.dark .text-indigo-700,.dark .text-indigo-800{ color:#a5b4fc; }
-.dark .text-indigo-950{ color:#c7d2fe; }
-.dark .bg-yellow-50{ background-color:rgba(234,179,8,.14); }
-.dark .bg-orange-50{ background-color:rgba(249,115,22,.14); }
-.dark .bg-indigo-50\/70{ background-color:rgba(99,102,241,.16); }
-
-/* ── 深色模式：移除「彩色 / 淺色」陰影 ──
-   shadow-indigo-200、以及 arbitrary 的 rgba(indigo/blue…) 陰影，在深底上會變成一圈光暈。
-   把彩色陰影的顏色設成透明（整個陰影就消失），arbitrary box-shadow 直接 none。
-   保留 shadow-sm/md/lg（黑色系，深底上本來就看不出來）與圖片的 drop-shadow filter。 */
-.dark .shadow-indigo-200,
-.dark .shadow-indigo-100{ --tw-shadow-color:transparent; }
-.dark [class*="shadow-["]{ box-shadow:none !important; }

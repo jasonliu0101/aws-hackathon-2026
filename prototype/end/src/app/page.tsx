@@ -20,7 +20,7 @@ export default function HomePage() {
 
   return (
     <div className="pb-8">
-      <section className="homepage-hero grid gap-5 p-4 sm:p-6 lg:grid-cols-[310px_minmax(0,1fr)] lg:gap-6 lg:p-8">
+      <section className="homepage-hero grid items-stretch justify-center gap-5 p-4 sm:p-6 lg:grid-cols-[310px_minmax(0,900px)] lg:gap-6 lg:p-8">
         <aside className="flex flex-col gap-4">
           <div className="px-1 py-2 lg:py-5">
             <p className="text-xs font-bold text-indigo-500">2026 年 7 月 15 日 · 星期三</p>
@@ -53,8 +53,8 @@ export default function HomePage() {
           </div>
         </aside>
 
-        <div className="min-w-0">
-          <div className="mb-3 px-1">
+        <div className="mx-auto flex w-full max-w-[900px] min-w-0 flex-col">
+          <div className="mb-3">
             <div><p className="text-[10px] font-bold uppercase tracking-[.16em] text-indigo-500">My city</p><h2 className="mt-0.5 text-xl font-extrabold tracking-tight text-slate-900">我的學習城市</h2></div>
           </div>
           <InteractiveCity buildings={state.buildings} pending={pending} />
