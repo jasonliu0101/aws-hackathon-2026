@@ -44,10 +44,7 @@
 .site-stage {
   min-height: 100dvh;
   padding: 0;
-  background:
-    radial-gradient(circle at 15% 0%, rgba(79, 70, 229, .18), transparent 30%),
-    radial-gradient(circle at 88% 18%, rgba(124, 58, 237, .12), transparent 28%),
-    #05070b;
+  background: #f8fafc;
 }
 
 .site-shell {
@@ -60,15 +57,6 @@
   background: #f8fafc;
 }
 
-@media (min-width: 768px) {
-  .site-stage { padding: 24px; }
-  .site-shell {
-    min-height: calc(100dvh - 48px);
-    border: 1px solid rgba(226, 232, 240, .9);
-    border-radius: 30px;
-    box-shadow: 0 28px 80px -34px rgba(30, 41, 59, .5);
-  }
-}
 
 .homepage-hero {
   background:
