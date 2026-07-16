@@ -41,3 +41,8 @@ export function midUrl(): string {
 export function frontUrl(): string {
   return `${crossHost(8899)}/front/?theme=${getTheme()}`;
 }
+
+/** 回 PPA 平台首頁（landing），讓使用者回去繼續逛課／觀課。 */
+export function homeUrl(): string {
+  return `${crossHost(8899)}/landing/?theme=${getTheme()}`;
+}
